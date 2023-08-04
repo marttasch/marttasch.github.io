@@ -1,0 +1,29 @@
+- title: Project 1
+  id: 1
+  short_description: This is a short description of project 1.
+  description: This is a longer description of project 1.
+  image: /assets/images/placeholder.jpg
+  url: https://example.com
+  date: 2020-01-01
+  author: Martin Tasch
+- title: Project 2
+  id: 2
+  short_description: This is a short description of project 2.
+  description: This is a longer description of project 2.
+  image: /assets/images/placeholder.jpg
+  url: https://example.com
+  date: 2020-01-01
+- title: Project 3
+  id: 3
+  short_description: This is a short description of project 3.
+  description: This is a longer description of project 3.
+  image: /assets/images/placeholder.jpg
+  url: https://example.com
+  date: 2020-01-01
+- title: Project 4
+  id: 4
+  short_description: This is a short description of project 4.
+  description: This is a longer description of project 4.
+  image: /assets/images/placeholder.jpg
+  url: https://example.com
+  date: 2020-01-01

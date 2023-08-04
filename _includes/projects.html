@@ -8,6 +8,22 @@
                     also add a link to the project repository and a link to the live
                     version of the project.
                 </p>
+                <div id="projectWrapper">
+                    {% for project in site.data.projects %}
+                        <a href="{{ project.link }}" target="_blank" class="projectLink"></a>
+                            <div id="project-{{ project.id }}" class="projectContainer" style="background-image: url('{{ project.image }}' );">
+                                <div class="projectContent">
+                                    <h3 class="projectTitle">{{ project.title }}</h3>
+                                    <p class="projectDescription">{{ project.description }}</p>
+                                </div>
+                            <div class="projectOverlay" >
+                                <i class="iconify" data-icon="fluent:open-32-filled" style="color: white;" data-width="50">></i>
+                            </div>
+                        </div>
+                        </a>
+                        
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
