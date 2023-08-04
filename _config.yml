@@ -52,3 +52,12 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+collections_dir: 'collections'
+
+collections:
+  projects:
+    output: true
+    permalink: /project/:slug
+    
