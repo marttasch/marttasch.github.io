@@ -1,0 +1,31 @@
+<div id="particles-js">
+    <div class="header">
+      <h1>
+        <span class="site-title">{{ site.data.info.real_name }}</span>
+        <span class="site-description">Media Technology • Lighting • Programmer</span>
+      </h1>
+      <div class="header-icons">
+        <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data.info.linkedin_url }}">
+          <i class="iconify icon" data-icon="mdi:linkedin"></i>
+        </a>
+        <a aria-label="My Github Profile" target="_blank" href="{{ site.data.info.github_url }}">
+          <i class="iconify icon" data-icon="mdi:github"></i>
+        </a>
+        <a aria-label="My Résumé" target="_blank" href="#">
+          <i class="iconify icon" data-icon="mdi:file-pdf"></i>
+        </a>
+        <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank"
+          ><i class="iconify icon" data-icon="mdi:envelope"></i></a>
+      </div>
+      <div class="header-links">
+        <a class="link" href="#about" data-scroll>About Me</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+      </div>
+    </div>
+    <a class="down" href="#about" data-scroll><i class="iconify icon" data-icon="tabler:chevron-down"></i></a>
+</div>
+
+
+
+<!-- Import JS: Particles Theme -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
