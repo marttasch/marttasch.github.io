@@ -7,6 +7,68 @@
                     I will list my skills here. I will also add a progress bar to
                     visualize my skills.
                 </p>
+
+                <div id="skill-wrapper">
+                    {% for category in site.data.skills %}
+                    {% assign c = "c-skill-chip" %}
+                    <div class="{{c}}__category">
+                        <h3>{{ category.category }}</h3>
+                        <div class="{{c}}__container">
+                            <div class="{{c}}__wrapper">
+                                {% for skill in category.skills %}
+                                <div class="{{c}}">
+                                    <div class="{{c}}__content">
+                                        {% if skill.image %}
+                                        <div class="{{c}}__image">
+                                            <img loading="lazy" src="{{ skill.image }}" alt="{{ skill.name }}">
+                                        </div>
+                                        {% else if skill.icon %}
+                                        <div class="{{c}}__icon">
+                                            <iconify-icon icon="{{ skill.icon }}"></iconify-icon>
+                                        </div>
+                                        {% else %}
+                                        <div class="{{c}}__icon">
+                                            <iconify-icon icon="ph:placeholder-bold"></iconify-icon>
+                                        </div>
+                                        {% endif %}
+
+                                        <div class="{{c}}__label">{{ skill.name }}</div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            {% if category.small %}
+                            {% assign c = "c-skill-chip--small c-skill-chip" %}
+                            {% assign fc = "c-skill-chip--flex-collumn" %}
+                            <div class="{{c}}__wrapper  {{fc}}">
+                                {% for small in category.small %}
+                                <div class="{{c}}">
+                                    <div class="{{c}}__content">
+                                        {% if small.image %}
+                                        <div class="{{c}}__image">
+                                            <img loading="lazy" src="{{ small.image }}" alt="{{ small.name }}">
+                                        </div>
+                                        {% else if small.icon %}
+                                        <div class="{{c}}__icon">
+                                            <iconify-icon icon="{{ small.icon }}"></iconify-icon>
+                                        </div>
+                                        {% else %}
+                                        <div class="{{c}}__icon">
+                                            <iconify-icon icon="ph:placeholder-bold"></iconify-icon>
+                                        </div>
+                                        {% endif %}
+
+                                        <div class="{{c}}__label">{{ small.name }}</div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

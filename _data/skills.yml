@@ -1,0 +1,102 @@
+- category: Programming
+  skills:
+  - name: Python
+    icon: "mdi:language-python"
+  - name: JavaScript
+    icon: "mdi:language-javascript"
+  - name: Git
+    icon: "mdi:git"
+  - name: PyTorch
+    icon: "simple-icons:pytorch"
+  - name: OpenCV
+    icon: "simple-icons:opencv"
+
+- category: Embedded Systems
+  skills:
+  - name: arduino
+    icon: "simple-icons:arduino"
+  - name: c++
+    icon: "mdi:language-cpp"
+  - name: raspberry pi
+    icon: "mdi:raspberry-pi"
+  - name: esp32
+    icon: "mdi:chip"
+
+- category: Interactive Media
+  skills:
+  - name: TouchDesigner
+    image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F1458252%3Fs%3D200%26v%3D4&f=1&nofb=1&ipt=f460472c02c9a09c36359092c67e860e863fe9380e1f01ba2899fba4a4fd6fad&ipo=images"
+  - name: Unreal Engine
+    icon: "mdi:unreal"
+
+- category: Light
+  skills:
+  - name: Lighting Design
+    icon: "mdi:lightbulb-on-outline"
+  - name: custom LED
+    icon: "mdi:led-strip-variant"
+  small:
+  - name: DMX
+    icon: "game-icons:light-projector"
+  - name: ArtNet
+    icon: "mdi:lightbulb-on-outline"
+  - name: GrandMA
+    icon: "mdi:lightbulb-on-outline"
+
+- category: Video
+  skills:
+  - name: Video Streaming
+    icon: "solar:play-stream-bold"
+  - name: Projection Mapping
+    icon: "mdi:projector"
+
+- category: Design
+  skills:
+  - name: Adobe Creative Cloud
+    icon: "mdi:adobe"
+  small:
+  - name: Blender
+    icon: "simple-icons:blender"
+    small: true
+  - name: Photoshop
+    icon: "simple-icons:adobephotoshop"
+    small: true
+  - name: Illustrator
+    icon: "simple-icons:adobeillustrator"
+    small: true
+  - name: After Effects
+    icon: "simple-icons:adobeaftereffects"
+    small: true
+  - name: Premiere Pro
+    icon: "simple-icons:adobepremierepro"
+    small: true
+
+
+
+- category: Webdesign
+  skills:
+  - name: HTML
+    icon: "mdi:language-html5"
+  - name: CSS
+    icon: "mdi:language-css3"
+  - name: JavaScript
+    icon: "mdi:language-javascript"
+  - name: Jekyll
+    icon: "simple-icons:jekyll"
+
+- category: DevOps
+  skills: 
+  - name: Docker
+    icon: "mdi:docker"
+  - name: Home Assistant
+    icon: "mdi:home-assistant"
+  - name: ESPHome
+    icon: "simple-icons:esphome"
+  - name: Network / NAT
+    icon: "mdi:network"
+  - name: Homelab
+    icon: "mdi:server-network"
+  - name: Linux
+    icon: "mdi:linux"
+  - name: VPN
+    icon: "mdi:vpn"
