@@ -4,13 +4,22 @@
             <div class="col-lg-12">
                 <h2>My Skills</h2>
                 <p>
-                    I will list my skills here. I will also add a progress bar to
-                    visualize my skills.
-                </p>
+                    I have a wide range of skills, but I am always eager to learn more. I am a fast learner and I am
+                    not afraid to try new things. I am a team player and I am always happy to help others.
 
-                <div id="skill-wrapper">
+                <div
+                    id="skill-wrapper"
+                    class="grid"
+                    data-masonry='{ 
+                        "itemSelector": ".grid-item",
+                        "columnWidth": ".grid-sizer",
+                        "stagger": 30
+                        }'>
+
                     {% for category in site.data.skills %}
                     {% assign c = "c-skill-chip" %}
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item">
                     <div class="{{c}}__category">
                         <h3>{{ category.category }}</h3>
                         <div class="{{c}}__container">
@@ -40,7 +49,7 @@
 
                             {% if category.small %}
                             {% assign c = "c-skill-chip--small c-skill-chip" %}
-                            {% assign fc = "c-skill-chip--flex-collumn" %}
+                            {% assign fc = "c-skill-chip--flex-collumn__wrapper" %}
                             <div class="{{c}}__wrapper  {{fc}}">
                                 {% for small in category.small %}
                                 <div class="{{c}}">
@@ -66,6 +75,7 @@
                             </div>
                             {% endif %}
                         </div>
+                    </div>
                     </div>
                     {% endfor %}
                 </div>

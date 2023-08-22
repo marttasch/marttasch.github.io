@@ -6,23 +6,29 @@
       </h1>
       <div class="header-icons">
         <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data.info.linkedin_url }}">
-          <i class="iconify icon" data-icon="mdi:linkedin"></i>
+          <iconify-icon icon="mdi:linkedin"></iconify-icon>
+        </a>
+        <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data.info.fiverr_url }}" >
+          <iconify-icon icon="jam:fiverr"></iconify-icon>
         </a>
         <a aria-label="My Github Profile" target="_blank" href="{{ site.data.info.github_url }}">
-          <i class="iconify icon" data-icon="mdi:github"></i>
+          <iconify-icon icon="mdi:github"></iconify-icon>
         </a>
         <a aria-label="My Résumé" target="_blank" href="#">
-          <i class="iconify icon" data-icon="mdi:file-pdf"></i>
+          <iconify-icon icon="bxs:file-pdf"></iconify-icon>
         </a>
-        <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank"
-          ><i class="iconify icon" data-icon="mdi:envelope"></i></a>
+        <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank">
+          <iconify-icon icon="ic:round-email"></iconify-icon>
+        </a>
       </div>
       <div class="header-links">
         <a class="link" href="#about" data-scroll>About Me</a>
         <a class="link" href="#projects" data-scroll>Projects</a>
       </div>
     </div>
-    <a class="down" href="#about" data-scroll><i class="iconify icon" data-icon="tabler:chevron-down"></i></a>
+    <a class="down" href="#about" data-scroll>
+      <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+    </a>
 </div>
 
 

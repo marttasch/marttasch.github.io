@@ -10,6 +10,8 @@
     icon: "simple-icons:pytorch"
   - name: OpenCV
     icon: "simple-icons:opencv"
+  - name: React Native
+    icon: "simple-icons:react"
 
 - category: Embedded Systems
   skills:
@@ -28,6 +30,8 @@
     image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F1458252%3Fs%3D200%26v%3D4&f=1&nofb=1&ipt=f460472c02c9a09c36359092c67e860e863fe9380e1f01ba2899fba4a4fd6fad&ipo=images"
   - name: Unreal Engine
     icon: "mdi:unreal"
+  - name: Motion Tracking
+    icon: "material-symbols:motion-sensor-active-rounded"
 
 - category: Light
   skills:
@@ -36,10 +40,8 @@
   - name: custom LED
     icon: "mdi:led-strip-variant"
   small:
-  - name: DMX
-    icon: "game-icons:light-projector"
-  - name: ArtNet
-    icon: "mdi:lightbulb-on-outline"
+  - name: Network
+    icon: "iconoir:network-alt"
   - name: GrandMA
     icon: "mdi:lightbulb-on-outline"
 
@@ -93,10 +95,10 @@
   - name: ESPHome
     icon: "simple-icons:esphome"
   - name: Network / NAT
-    icon: "mdi:network"
+    icon: "icon-park-outline:database-network-point"
   - name: Homelab
-    icon: "mdi:server-network"
+    icon: "uil:server-network"
   - name: Linux
-    icon: "mdi:linux"
+    icon: "simple-icons:linux"
   - name: VPN
     icon: "mdi:vpn"
