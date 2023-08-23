@@ -1,26 +1,36 @@
 <div id="particles-js">
     <div class="header">
-      <div class="header-title">
-        <span class="site-title">{{ site.data.info.real_name }}</span>
-        <span class="site-description">Student Media Technology</span>
+      <div class="header-avatar-wrapper">
+        <div class="header-avatar">
+          <!-- <img loading="lazy" src="{{ site.data.info.avatar }}" alt="{{ site.data.info.real_name }}"> -->
+          <img src="https://via.placeholder.com/200x200" alt="Placeholder Image">
+        </div>
       </div>
-      <div class="header-icons">
-        <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data.info.linkedin_url }}">
-          <iconify-icon icon="mdi:linkedin"></iconify-icon>
-        </a>
-        <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data.info.fiverr_url }}" >
-          <iconify-icon icon="jam:fiverr"></iconify-icon>
-        </a>
-        <a aria-label="My Github Profile" target="_blank" href="{{ site.data.info.github_url }}">
-          <iconify-icon icon="mdi:github"></iconify-icon>
-        </a>
-        <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank">
-          <iconify-icon icon="ic:round-email"></iconify-icon>
-        </a>
-      </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>About Me</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
+
+      <div class="header-content-wrapper">
+        <div class="header-title">
+          <span class="site-title">{{ site.data.info.real_name }}</span>
+          <span class="site-description">Student Media Technology</span>
+        </div>
+        <div class="header-separator"></div>
+        <div class="header-icons">
+          <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data.info.linkedin_url }}">
+            <iconify-icon icon="mdi:linkedin"></iconify-icon>
+          </a>
+          <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data.info.fiverr_url }}" >
+            <iconify-icon icon="jam:fiverr"></iconify-icon>
+          </a>
+          <a aria-label="My Github Profile" target="_blank" href="{{ site.data.info.github_url }}">
+            <iconify-icon icon="mdi:github"></iconify-icon>
+          </a>
+          <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank">
+            <iconify-icon icon="ic:round-email"></iconify-icon>
+          </a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="#about" data-scroll>About Me</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div>
       </div>
     </div>
     <a class="down" href="#about" data-scroll>
