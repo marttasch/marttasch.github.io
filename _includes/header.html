@@ -1,9 +1,9 @@
 <div id="particles-js">
     <div class="header">
-      <h1>
+      <div class="header-title">
         <span class="site-title">{{ site.data.info.real_name }}</span>
-        <span class="site-description">Media Technology • Lighting • Programmer</span>
-      </h1>
+        <span class="site-description">Student Media Technology</span>
+      </div>
       <div class="header-icons">
         <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data.info.linkedin_url }}">
           <iconify-icon icon="mdi:linkedin"></iconify-icon>
@@ -13,9 +13,6 @@
         </a>
         <a aria-label="My Github Profile" target="_blank" href="{{ site.data.info.github_url }}">
           <iconify-icon icon="mdi:github"></iconify-icon>
-        </a>
-        <a aria-label="My Résumé" target="_blank" href="#">
-          <iconify-icon icon="bxs:file-pdf"></iconify-icon>
         </a>
         <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank">
           <iconify-icon icon="ic:round-email"></iconify-icon>
@@ -31,7 +28,13 @@
     </a>
 </div>
 
+<!-- stats - count particles --> 
+<div class="count-particles"> 
+  <span class="js-count-particles"></span>
+</div>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
-
-<!-- Import JS: Particles Theme -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+{% include header_particleJS.html %}

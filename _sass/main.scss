@@ -94,41 +94,49 @@ a img {
     z-index: 1;
     text-align: center;
     color: #fff;
-    position: absolute;
     font-family: 'Rubik', sans-serif;
-    width: 80%;
+
+    background-color: rgba($background-color-dark, 0.5);
+    border-radius: 15px;
+    
+    position: absolute;
     top: 50%;
     left: 50%;
+    width: 90%;
+    max-width: $desktop;
     margin: 0 auto;
+    padding: 15px;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+}
+.header-title {
+    margin-bottom: 30px
 }
 
 .header .site-title {
-    font-size: 35px;
+    font-size: 3.8em;
     display: block;
     line-height: 1;
     color: #fff;
-}
-
-@media only screen and (min-width:550px) {
-    .header .site-title {
-        margin: 0;
-        font-size: 100px
-    }
+    transition: all .7s ease;
 }
 
 .header .site-description {
-    font-size: 20px;
+    font-size: 1.6em;
     display: block;
     line-height: 1;
     color: #fff;
-    margin-top: 10px
+    margin-top: 10px;
+    transition: all .7s ease;
 }
 
-@media only screen and (min-width:550px) {
+@media screen and (max-width: $mobile) {
+    .header .site-title {
+        font-size: 2.6em
+    }
+
     .header .site-description {
-        font-size: 40px
+        font-size: 1.3em
     }
 }
 
@@ -139,13 +147,14 @@ a img {
 .header-links .link {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
-    margin: 10px
+    font-size: 1.2em;
+    margin: 10px;
+    transition: all .7s ease;
 }
 
-@media only screen and (min-width:550px) {
+@media screen and (max-width: $mobile) {
     .header-links .link {
-        font-size: 20px
+        font-size: 1em
     }
 }
 
@@ -168,21 +177,26 @@ a img {
     border: 2px solid #fff;
     transition: all .7s;
     width: 20px;
-    font-size: 20px;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
     margin: 5px
 }
 
 .header-icons iconify-icon:active,
 .header-icons iconify-icon:hover {
     color: #1488CC;
-    background: #fff
+    background: #fff;
+    height: 35px;
+    width: 35px;
+    font-size: 35px
 }
 
-@media only screen and (min-width:550px) {
+@media screen and (max-width: $mobile) {
     .header-icons iconify-icon {
-        width: 35px;
-        height: 35px;
-        font-size: 35px
+        font-size: 24px;
+        width: 24px;
+        height: 24px
     }
 }
 
@@ -214,13 +228,6 @@ a img {
     100% {
         transform: translatey(0px)
     }
-}
-
-.down iconify-icon:active,
-.down iconify-icon:hover,
-.footer a:active,
-.footer a:hover {
-    color: $primary-color
 }
 
 
