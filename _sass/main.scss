@@ -14,8 +14,10 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: #555;
-    font-family: 'Nunito Sans', sans-serif
+    color: $text-color-light;
+    font-family: 'Nunito Sans', sans-serif;
+
+    background-color: $background-color-dark
 }
 
 h1 {
@@ -31,7 +33,7 @@ strong {
     margin-top: 1em;
     padding-top: 1em;
     line-height: 1.25;
-    color: #333
+    color: $text-heading;
 }
 
 h2 {
@@ -125,6 +127,10 @@ a img {
     overflow: hidden;
     border: 5px solid gray;
     box-shadow: 0px 0px 30px rgba($primary-color, 0.1);
+}
+.header-avatar img {
+    width: 100%;
+    height: auto;
 }
 .header .site-title {
     font-size: 3.8em;
@@ -230,16 +236,25 @@ a img {
     }
 }
 
-.down {
+.header-arrowDown-container{
     position: absolute;
     bottom: 0px;
     width: 100%;
     margin: 0 auto;
-    display: block;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.down {
+    position: relative;
+    width: min-content;
+    height: min-content;
+    padding: 20px;
     font-size: 8rem;
     cursor: pointer
 }
-
 .down iconify-icon {
     -webkit-animation: float 2s infinite;
     animation: float 2s infinite;
@@ -269,6 +284,9 @@ section {
 }
 
 // ----- About ----- //
+#about{
+   color: $text-color-light;
+}
 
 // ----- Skills ----- //
 

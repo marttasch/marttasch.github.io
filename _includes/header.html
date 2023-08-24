@@ -2,8 +2,7 @@
     <div class="header">
       <div class="header-avatar-wrapper">
         <div class="header-avatar">
-          <!-- <img loading="lazy" src="{{ site.data.info.avatar }}" alt="{{ site.data.info.real_name }}"> -->
-          <img src="https://via.placeholder.com/200x200" alt="Placeholder Image">
+          <img loading="lazy" src="{{ site.data.info.avatar_url }}" alt="{{ site.data.info.real_name }}">
         </div>
       </div>
 
@@ -33,9 +32,11 @@
         </div>
       </div>
     </div>
-    <a class="down" href="#about" data-scroll>
-      <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
-    </a>
+    <div class="header-arrowDown-container">
+      <a class="down" href="#about" data-scroll>
+        <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
+      </a>
+    </div>
 </div>
 
 <!-- stats - count particles --> 
