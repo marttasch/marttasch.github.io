@@ -1,3 +1,6 @@
+<!-- https://github.com/desandro/masonry -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
 <section id="skills" class="skills">
     <div class="container">
         <div class="row">
@@ -6,12 +9,7 @@
 
                 <div
                     id="skill-wrapper"
-                    class="grid"
-                    data-masonry='{ 
-                        "itemSelector": ".grid-item",
-                        "columnWidth": ".grid-sizer",
-                        "stagger": 30
-                        }'>
+                    class="grid">
 
                     {% for category in site.data.skills %}
                     {% assign c = "c-skill-chip" %}
@@ -81,7 +79,44 @@
     </div>
 </section>
 
+<style>
+    .grid-item {
+        opacity: 0;
+        transition: opacity .5s ease-in-out;
+    }
+</style>
+
 <script>
     // Trigger repositioning
-    masonry.layout();
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry( grid, {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true,
+        stagger : 30,
+    });
+
+    setTimeout(function() {
+        msnry.layout();
+    }, 100);
+
+    msnry.on('layoutComplete', function() {
+        console.log('layout is complete');
+        var items = document.querySelectorAll('.grid-item');
+
+        for (var i = 0; i < items.length; i++) {
+            items[i].style.opacity = 1;
+            transistionDelay = (i + 1) * 30;
+            items[i].style.transitionDelay = transistionDelay + 'ms';
+        }
+    });
+    
+
+
+
+
+
 </script>
+
+
+
