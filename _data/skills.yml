@@ -17,8 +17,6 @@
   skills:
   - name: arduino
     icon: "simple-icons:arduino"
-  - name: c++
-    icon: "mdi:language-cpp"
   - name: raspberry pi
     icon: "mdi:raspberry-pi"
   - name: esp32

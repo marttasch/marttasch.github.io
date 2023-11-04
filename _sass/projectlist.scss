@@ -127,6 +127,9 @@ $maxHeight: 250px;
 		opacity: 0;
 		transform: translate3d(0,-100%,0);
 
+		max-width: 500px;
+		overflow: hidden;
+
 		&:hover {
 			opacity: 0.7;
 		}

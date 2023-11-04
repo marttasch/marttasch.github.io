@@ -96,9 +96,15 @@
         stagger : 30,
     });
 
-    setTimeout(function() {
-        msnry.layout();
-    }, 100);
+
+    document.addEventListener("DOMContentLoaded", function(event){
+        setTimeout(function(){
+            msnry.layout();
+        }, 200);
+        setTimeout(function(){
+            msnry.layout();
+        }, 1000);
+});
 
     msnry.on('layoutComplete', function() {
         console.log('layout is complete');
