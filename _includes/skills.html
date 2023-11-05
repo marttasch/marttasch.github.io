@@ -16,7 +16,14 @@
                     <div class="grid-sizer"></div>
                     <div class="grid-item">
                     <div class="{{c}}__category">
-                        <h3>{{ category.category }}</h3>
+                        <div class="{{c}}__category__header">
+                            <div class="{{c}}__category__header__icon">
+                                <iconify-icon class="{{c}}__category__icon" icon="{{ category.icon }}"></iconify-icon>
+                            </div>
+                            <div class="{{c}}__category__header__title">
+                                <h3>{{ category.category }}</h3>
+                            </div>
+                        </div>
                         <div class="{{c}}__container">
                             <div class="{{c}}__wrapper">
                                 {% for skill in category.skills %}

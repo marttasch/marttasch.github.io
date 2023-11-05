@@ -8,6 +8,7 @@ $maxHeight: 250px;
 	max-height: $maxHeight;
 
 
+
 	&:hover {
 		#{$c}__title, #{$c}__subtitle {
 			opacity: 1;
@@ -119,6 +120,8 @@ $maxHeight: 250px;
 		margin-bottom: 0;
 		opacity: 1;
 		transform: translate3d(0,50%,0);
+
+		text-shadow: 0px 0px 25px rgba(black, 0.8);
 	}
 
 	&__subtitle {
@@ -128,7 +131,7 @@ $maxHeight: 250px;
 		transform: translate3d(0,-100%,0);
 
 		max-width: 500px;
-		overflow: hidden;
+		text-shadow: 0px 0px 25px rgba(black, 0.8);
 
 		&:hover {
 			opacity: 0.7;

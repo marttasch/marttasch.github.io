@@ -1,4 +1,5 @@
 - category: Programming
+  icon: "ph:code-bold"
   skills:
   - name: Python
     icon: "mdi:language-python"
@@ -14,6 +15,7 @@
     icon: "simple-icons:react"
 
 - category: Embedded Systems
+  icon: "mdi:chip"
   skills:
   - name: arduino
     icon: "simple-icons:arduino"
@@ -23,6 +25,7 @@
     icon: "mdi:chip"
 
 - category: Interactive Media
+  icon: "mdi:gamepad-variant"
   skills:
   - name: TouchDesigner
     image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F1458252%3Fs%3D200%26v%3D4&f=1&nofb=1&ipt=f460472c02c9a09c36359092c67e860e863fe9380e1f01ba2899fba4a4fd6fad&ipo=images"
@@ -32,6 +35,7 @@
     icon: "material-symbols:motion-sensor-active-rounded"
 
 - category: Light
+  icon: "mdi:lightbulb-on-outline"
   skills:
   - name: Lighting Design
     icon: "mdi:lightbulb-on-outline"
@@ -44,6 +48,7 @@
     icon: "mdi:lightbulb-on-outline"
 
 - category: Video
+  icon: "mdi:video-vintage"
   skills:
   - name: Video Streaming
     icon: "solar:play-stream-bold"
@@ -51,6 +56,7 @@
     icon: "mdi:projector"
 
 - category: Design
+  icon: "mdi:format-paint"
   skills:
   - name: Adobe Creative Cloud
     icon: "mdi:adobe"
@@ -74,6 +80,7 @@
 
 
 - category: Webdesign
+  icon: "mdi:web"
   skills:
   - name: HTML
     icon: "mdi:language-html5"
@@ -85,6 +92,7 @@
     icon: "simple-icons:jekyll"
 
 - category: DevOps
+  icon: "mdi:server-network"
   skills: 
   - name: Docker
     icon: "mdi:docker"
