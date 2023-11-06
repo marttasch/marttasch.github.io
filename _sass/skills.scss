@@ -1,6 +1,6 @@
 .c-skill-chip { $c: &;
     margin: 0px 10px 10px 0px;
-    transition: transform .4s ease;
+    transition: transform .7s ease;
 
     cursor: default;
 
@@ -20,13 +20,11 @@
         border: rgba($primary-color, 0.5) solid 1px;
         //box-shadow: 0px 0px 5px rgba($primary-color, 0.4);
 
-        transition: transform .2s ease;
-
         margin: 0px 10px 30px 0px;
         padding: 10px 15px;
         width: 90%;
 
-        transition: all .4s ease;
+        transition: all .7s ease;
 
         
         &__header{
@@ -66,7 +64,7 @@
         }
 
         &:hover {
-            transform: scale(1.01);
+            transform: scale(1.00);
             background-color: rgba($primary-color, 0.3);
         }
     }
@@ -88,7 +86,7 @@
         align-items: center;
         justify-content: center;
 
-        transition: all .2s ease;
+        transition: all .7s ease;
 
         iconify-icon{
             font-size: 2rem;

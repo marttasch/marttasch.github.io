@@ -8,11 +8,11 @@
             text-decoration: none;
             color: white;
             font-size: 2em;
+            position: relative;
 
             transition: all .4s ease;
         }
         a:hover {
-            color: $secondary-color;
         }
     }
 

@@ -17,7 +17,7 @@ body {
     color: $text-color-light;
     font-family: 'Nunito Sans', sans-serif;
 
-    background-color: $background-color-dark;
+    background-color: $background-color;
     //background: linear-gradient( #1488CC, #2B32B2);
     //background-image: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
     //background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
@@ -26,8 +26,8 @@ body {
     //background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
     background: #0f0c29;  /* fallback for old browsers */
     //background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #02023b, #160f63, #02023b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: linear-gradient(to left, $secondary-color, #160f63, $secondary-color); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    //background: linear-gradient(to left, $secondary-color, $primary-color, $secondary-color); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
@@ -76,6 +76,27 @@ a {
 
 a img {
     border: 0
+}
+
+.anim-underline {
+    &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 4px;
+        border-radius: 50px;
+        display: block;
+        margin-top: 0px;
+        right: 0;
+        background: $accent-color;
+        transition: width .4s ease;
+        -webkit-transition: width .4s ease;
+    }
+
+    &:hover:after {
+        width: 100%;
+        left: 0;
+    }
 }
 
 
@@ -191,7 +212,7 @@ a img {
 
 .header-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center
 }
 
@@ -204,7 +225,9 @@ a img {
     font-size: 1.2em;
     margin: 10px;
     transition: all .7s ease;
+    position: relative;
 }
+
 @media screen and (max-width: $mobile) {
     .header-links .link {
         font-size: 1em
@@ -307,9 +330,14 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     width: 100%;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    transition: all .7s ease;
 }
 
 
