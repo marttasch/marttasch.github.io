@@ -1,10 +1,12 @@
 <div id="particles-js">
     <div class="header">
+      {% if site.data.info.avatar_url %}
       <div class="header-avatar-wrapper">
         <div class="header-avatar">
           <img loading="lazy" src="{{ site.data.info.avatar_url }}" alt="{{ site.data.info.real_name }}">
         </div>
       </div>
+      {% endif %}
 
       <div class="header-content-wrapper">
         <div class="header-title">
@@ -13,26 +15,34 @@
         </div>
         <div class="header-separator"></div>
         <div class="header-icons">
+          {% if site.data.info.linkedin_url %}
           <div class="header-icon-wrapper">
             <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data.info.linkedin_url }}">
               <iconify-icon icon="mdi:linkedin"></iconify-icon>
             </a>
           </div>
+          {% endif %}
+          {% if site.data.info.fiverr_url %}
           <div class="header-icon-wrapper">
             <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data.info.fiverr_url }}" >
               <iconify-icon icon="jam:fiverr"></iconify-icon>
             </a>
           </div>
+          {% endif %}
+          {% if site.data.info.github_url %}
           <div class="header-icon-wrapper">
             <a aria-label="My Github Profile" target="_blank" href="{{ site.data.info.github_url }}">
               <iconify-icon icon="mdi:github"></iconify-icon>
             </a>
           </div>
+          {% endif %}
+          {% if site.data.info.email %}
           <div class="header-icon-wrapper">
             <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank">
               <iconify-icon icon="ic:round-email"></iconify-icon>
             </a>
           </div>
+          {% endif %}
         </div>
         <div class="header-links">
           {% include navigation.html %}
@@ -40,7 +50,7 @@
       </div>
     </div>
     <div class="header-arrowDown-container">
-      <a class="down" href="#about" data-scroll>
+      <a class="down" href="#{{ site.data.info.scrollToSection }}" data-scroll>
         <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
       </a>
     </div>
