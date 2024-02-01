@@ -13,7 +13,7 @@ gallery:
 layout: projects
 ---
 
-Im Kurs Smart Media Technology meines Medientechnik Studiums war ich maßgeblich an der Entwicklung eines interaktiven "Schnick, Schnack, Schnuck"-Spiels beteiligt. Unsere Gruppenzielsetzung war es, durch ein Convolutional Neural Network (CNN) das Webcam-Bild der Nutzer:innen zu analysieren und ihrwork (CNN) das Webcam-Bild der Nutzer:innen zu analysieren und ihre Handgesten (Schere, Stein oder Papier) zu erkennen, um gegen den Computer anzutreten.
+Im Kurs Smart Media Technology meines Medientechnik Studiums war ich maßgeblich an der Entwicklung eines interaktiven "Schnick, Schnack, Schnuck"-Spiels beteiligt. Unsere Gruppenzielsetzung war es, durch ein Convolutional Neural Network (CNN) das Webcam-Bild der Nutzer:innen zu analysieren und ihre Handgesten (Schere, Stein oder Papier) zu erkennen, um gegen den Computer anzutreten.
 
 Die gesamte Implementierung erfolgte in Python auf der Plattform Google Colab. Wir erstellten einen eigenen Datensatz mit etwa 200 Bildern für jede Handgeste, um das CNN zu trainieren. Dabei verfeinerten wir ein vortrainiertes ResNet50-Modell, passend für unsere Anforderungen. Als Framework nutzten wir PyTorch, während Ray Tune und Tensorboard für das Training und die Visualisierung der Ergebnisse zum Einsatz kamen.
 
