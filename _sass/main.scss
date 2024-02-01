@@ -83,9 +83,16 @@ textarea {
 
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    -webkit-text-decoration-skip: objects;
+    color: $accent-color;
 }
-
+a:hover {
+    color: darken($accent-color, 5%);
+    text-decoration: none
+}
+a:visited {
+    color: $accent-color;
+}
 
 a img {
     border: 0
