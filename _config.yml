@@ -30,6 +30,7 @@ url: "https://martintasch.de" # the base hostname & protocol for your site, e.g.
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-target-blank
 
 # Exclude from processing.
 # The following items will not be processed, by default.
