@@ -12,7 +12,7 @@ layout: default
         <div class="project-header" style="background-image: url('{{ page.image.path }}')";>
             <h1 class="title">{{ page.title }}</h1>
             <h2 class="subtitle">{{ page.subtitle }}</h2>
-            <p class="date">{{ page.date | date: "%B %d, %Y"  }}</p>
+            <p class="date">{{ page.date | localize: "%d. %B %Y"  }}</p>
         </div>
         <div class="project-content">
             {{ page.content }}
