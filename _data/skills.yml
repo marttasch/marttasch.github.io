@@ -39,6 +39,8 @@
     icon: "mdi:lightbulb-on-outline"
   - name: custom LED
     icon: "mdi:led-strip-variant"
+  - name: KNX
+    icon: "cbi:knx"
   small:
   - name: GrandMA
     icon: "mdi:lightbulb-on-outline"
