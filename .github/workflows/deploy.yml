@@ -1,24 +1,35 @@
-name: Deploy to GitHub Pages
+name: Deploy Jekyll Site to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # replace with your default branch name if not 'main'
+      - main  # Set this to your default branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Copy _site to another branch
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'  # Set this to your Ruby version
+
+      - name: Build Jekyll Site
         run: |
-          git fetch
-          git checkout github_pages || git checkout -b github_pages
-          git rm -rf ./*
-          git checkout main -- _site
-          mv _site/* .
-          git add .
-          git commit -m "Update _site folder" || echo "No changes to commit"
-          git push origin github_pages || echo "No changes to push"
+          gem install bundler
+          bundle install
+          bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: github_pages  # Your target branch
+          publish_dir: ./_site
+          allow_empty_commit: true
+          keep_files: false
+          force_orphan: true  # Use this to create the branch if it doesn't exist
