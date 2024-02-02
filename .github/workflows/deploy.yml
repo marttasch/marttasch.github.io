@@ -18,7 +18,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./site
+        publish_dir: ./_site
         publish_branch: gh-pages
         force_orphan: true # This creates the branch if it doesn't exist
         keep_files: false # This will remove files that are not in the publish_dir
