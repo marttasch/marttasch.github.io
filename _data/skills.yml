@@ -5,14 +5,24 @@
     icon: "mdi:language-python"
   - name: JavaScript
     icon: "mdi:language-javascript"
-  - name: Git
-    icon: "mdi:git"
+  small:
+  - name: React Native
+    icon: "simple-icons:react"
+
+- category: Computer Vision
+  icon: "mdi:eye"
+  skills:
   - name: PyTorch
     icon: "simple-icons:pytorch"
   - name: OpenCV
     icon: "simple-icons:opencv"
-  - name: React Native
-    icon: "simple-icons:react"
+  small:
+  - name: Object Detection
+    icon: "mdi:eye"
+  - name: Image Segmentation
+    icon: "mdi:vector-polygon"
+  - name: Image Classification
+    icon: "mdi:image-filter"
 
 - category: Embedded Systems
   icon: "mdi:chip"
@@ -28,7 +38,7 @@
   icon: "mdi:gamepad-variant"
   skills:
   - name: TouchDesigner
-    image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F1458252%3Fs%3D200%26v%3D4&f=1&nofb=1&ipt=f460472c02c9a09c36359092c67e860e863fe9380e1f01ba2899fba4a4fd6fad&ipo=images"
+    image: "assets/images/icons/touchdesigner.png"
   - name: Unreal Engine
     icon: "mdi:unreal"
 
@@ -53,27 +63,27 @@
   - name: Projection Mapping
     icon: "mdi:projector"
 
-- category: Design
-  icon: "mdi:format-paint"
-  skills:
-  - name: Adobe Creative Cloud
-    icon: "mdi:adobe"
-  small:
-  - name: Blender
-    icon: "simple-icons:blender"
-    small: true
-  - name: Photoshop
-    icon: "simple-icons:adobephotoshop"
-    small: true
-  - name: Illustrator
-    icon: "simple-icons:adobeillustrator"
-    small: true
-  - name: After Effects
-    icon: "simple-icons:adobeaftereffects"
-    small: true
-  - name: Premiere Pro
-    icon: "simple-icons:adobepremierepro"
-    small: true
+# - category: Design
+#   icon: "mdi:format-paint"
+#   skills:
+#   - name: Adobe Creative Cloud
+#     icon: "mdi:adobe"
+#   small:
+#   - name: Blender
+#     icon: "simple-icons:blender"
+#     small: true
+#   - name: Photoshop
+#     icon: "simple-icons:adobephotoshop"
+#     small: true
+#   - name: Illustrator
+#     icon: "simple-icons:adobeillustrator"
+#     small: true
+#   - name: After Effects
+#     icon: "simple-icons:adobeaftereffects"
+#     small: true
+#   - name: Premiere Pro
+#     icon: "simple-icons:adobepremierepro"
+#     small: true
 
 
 
@@ -84,8 +94,6 @@
     icon: "mdi:language-html5"
   - name: CSS
     icon: "mdi:language-css3"
-  - name: JavaScript
-    icon: "mdi:language-javascript"
   - name: Jekyll
     icon: "simple-icons:jekyll"
 
@@ -98,11 +106,9 @@
     icon: "mdi:home-assistant"
   - name: ESPHome
     icon: "simple-icons:esphome"
-  - name: Network / NAT
+  - name: Networking
     icon: "icon-park-outline:database-network-point"
   - name: Homelab
     icon: "uil:server-network"
   - name: Linux
     icon: "simple-icons:linux"
-  - name: VPN
-    icon: "mdi:vpn"
