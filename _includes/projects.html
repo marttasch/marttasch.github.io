@@ -10,7 +10,9 @@
                     <article class="{{c}} col col-4 col-d-6 col-t-12">
                         <div class="{{c}}__content">
                           <a href="{{ project.url }}" class="{{c}}__image">
-                            <img loading="lazy" src="{{ project.image.path }}" alt="{{ project.title }}">
+                            {% if project.image.path %}
+                              <img loading="lazy" src="{{ project.image.path }}" alt="{{ project.title }}">
+                            {% endif %}                         
                           </a>
                           <div class="{{c}}__info">
                             <div class="{{c}}__info-wrap">
