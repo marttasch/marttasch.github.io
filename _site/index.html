@@ -7,6 +7,9 @@
     <title>Martin Tasch</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     
   </head>
   <body>
@@ -23,7 +26,9 @@
       <div class="header-content-wrapper">
         <div class="header-title">
           <span class="site-title">Martin <span class="site-title-highlight">Tasch</span></span>
-          <span class="site-description">B.Sc Media Technology</span>
+          <span class="site-description">B.Sc Media Technology<br>
+&amp; Event Technician<br>
+</span>
         </div>
         <div class="header-separator"></div>
         <div class="header-icons">
@@ -211,546 +216,565 @@
 
 
 
-<!-- https://github.com/desandro/masonry -->
+<!-- Masonry -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!-- Tippy.js -->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 
 <section id="skills" class="skills">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2>Skills</h2>
-
                 <div id="skill-wrapper" class="grid">
-
                     
                     
                     <div class="grid-sizer"></div>
                     <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="ph:code-bold"></iconify-icon>
+                        <div class="c-skill-chip__category">
+                            <div class="c-skill-chip__category__header">
+                                <div class="c-skill-chip__category__header__icon">
+                                    <iconify-icon class="c-skill-chip__category__icon" icon="streamline:ai-prompt-spark-solid"></iconify-icon>
+                                </div>
+                                <div class="c-skill-chip__category__header__title">
+                                    <h3>Software &amp; AI</h3>
+                                </div>
                             </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>Programming</h3>
+                            <div class="c-skill-chip__container">
+                                <div class="c-skill-chip__wrapper">
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:language-python'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Python&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:language-javascript'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;JavaScript&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="ph:code-bold"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Programming</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:pytorch'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;PyTorch&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:opencv'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;OpenCV&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:eye'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Object Detection&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:vector-polygon'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Image Segmentation&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:image-filter'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Image Classification&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="mdi:eye"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Computer Vision</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:linux'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Linux&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:docker'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Docker&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:network'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Networking&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:home-assistant'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Homelab&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="mdi:server"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">DevOps &amp; Infrastructure</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:language-html5'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;HTML&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:language-css3'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;CSS&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:jekyll'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Jekyll&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:grav'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Grav&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:react'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;React Native&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="hugeicons:web-design-02"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Web Development</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
                             </div>
                         </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:language-python"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Python</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:language-javascript"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">JavaScript</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                            
-                            
-                            <div class="c-skill-chip--small c-skill-chip__wrapper  c-skill-chip--flex-collumn__wrapper">
-                                
-                                <div class="c-skill-chip--small c-skill-chip">
-                                    <div class="c-skill-chip--small c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip--small c-skill-chip__icon">
-                                            <iconify-icon icon="simple-icons:react"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip--small c-skill-chip__label">React Native</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="mdi:eye"></iconify-icon>
-                            </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>Computer Vision</h3>
-                            </div>
-                        </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="simple-icons:pytorch"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">PyTorch</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="simple-icons:opencv"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">OpenCV</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                            
-                            
-                            <div class="c-skill-chip--small c-skill-chip__wrapper  c-skill-chip--flex-collumn__wrapper">
-                                
-                                <div class="c-skill-chip--small c-skill-chip">
-                                    <div class="c-skill-chip--small c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip--small c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:eye"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip--small c-skill-chip__label">Object Detection</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip--small c-skill-chip">
-                                    <div class="c-skill-chip--small c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip--small c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:vector-polygon"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip--small c-skill-chip__label">Image Segmentation</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip--small c-skill-chip">
-                                    <div class="c-skill-chip--small c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip--small c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:image-filter"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip--small c-skill-chip__label">Image Classification</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="mdi:chip"></iconify-icon>
-                            </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>Embedded Systems</h3>
-                            </div>
-                        </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="simple-icons:arduino"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">arduino</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:raspberry-pi"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">raspberry pi</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:chip"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">esp32</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                        </div>
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="mdi:gamepad-variant"></iconify-icon>
-                            </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>Interactive Media</h3>
-                            </div>
-                        </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__image">
-                                            <img loading="lazy" src="assets/images/icons/touchdesigner.png" alt="TouchDesigner">
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">TouchDesigner</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:unreal"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Unreal Engine</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                        </div>
-                    </div>
                     </div>
                     
                     
                     <div class="grid-sizer"></div>
                     <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="mdi:lightbulb-on-outline"></iconify-icon>
+                        <div class="c-skill-chip__category">
+                            <div class="c-skill-chip__category__header">
+                                <div class="c-skill-chip__category__header__icon">
+                                    <iconify-icon class="c-skill-chip__category__icon" icon="ph:circuitry-fill"></iconify-icon>
+                                </div>
+                                <div class="c-skill-chip__category__header__title">
+                                    <h3>Electronics</h3>
+                                </div>
                             </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>Light</h3>
+                            <div class="c-skill-chip__container">
+                                <div class="c-skill-chip__wrapper">
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='cib:raspberry-pi'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Raspberry Pi&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:espressif'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;ESP32&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:arduino'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Arduino&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="mdi:raspberry-pi"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Embedded Systems</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:power-plug'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;230V AC Wiring&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:current-dc'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;24V DC Wiring&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:lightbulb-on'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Lighting Systems&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:fuse'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Circuit Design &amp; Protection&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="ic:twotone-electrical-services"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Electrical Installation</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:homeassistant'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Home Automation&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='cbi:knx'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;KNX&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:lightbulb-auto'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;DALI&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='simple-icons:mqtt'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;MQTT&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="mdi:home-automation"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">IoT &amp; Automation</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
                             </div>
                         </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Lighting Design</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:led-strip-variant"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">custom LED</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="cbi:knx"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">KNX</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                            
-                            
-                            <div class="c-skill-chip--small c-skill-chip__wrapper  c-skill-chip--flex-collumn__wrapper">
-                                
-                                <div class="c-skill-chip--small c-skill-chip">
-                                    <div class="c-skill-chip--small c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip--small c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:lightbulb-on-outline"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip--small c-skill-chip__label">GrandMA</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            
-                        </div>
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="mdi:video-vintage"></iconify-icon>
-                            </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>Video</h3>
-                            </div>
-                        </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="solar:play-stream-bold"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Video Streaming</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:projector"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Projection Mapping</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                        </div>
-                    </div>
-                    </div>
-                    
-                    
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="mdi:web"></iconify-icon>
-                            </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>Webdesign</h3>
-                            </div>
-                        </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:language-html5"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">HTML</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:language-css3"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">CSS</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="simple-icons:jekyll"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Jekyll</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                        </div>
-                    </div>
                     </div>
                     
                     
                     <div class="grid-sizer"></div>
                     <div class="grid-item">
-                    <div class="c-skill-chip__category">
-                        <div class="c-skill-chip__category__header">
-                            <div class="c-skill-chip__category__header__icon">
-                                <iconify-icon class="c-skill-chip__category__icon" icon="mdi:server-network"></iconify-icon>
+                        <div class="c-skill-chip__category">
+                            <div class="c-skill-chip__category__header">
+                                <div class="c-skill-chip__category__header__icon">
+                                    <iconify-icon class="c-skill-chip__category__icon" icon="ph:hand-tap-fill"></iconify-icon>
+                                </div>
+                                <div class="c-skill-chip__category__header__title">
+                                    <h3>Interactive Media</h3>
+                                </div>
                             </div>
-                            <div class="c-skill-chip__category__header__title">
-                                <h3>DevOps</h3>
+                            <div class="c-skill-chip__container">
+                                <div class="c-skill-chip__wrapper">
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__image'&gt;
+                                                        &lt;img loading='lazy' src='assets/images/icons/touchdesigner.png' alt='TouchDesigner'&gt;
+                                                    &lt;/div&gt;       
+                                                
+                                                
+                                                &lt;span&gt;TouchDesigner&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="ri:video-on-ai-fill"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Real-Time Media Tools</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:lightbulb-spot'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Lighting Design&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:led-strip-variant'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;LED Installations&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:spotlight'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Event Lighting&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:home-lightbulb'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Smart Home Integration&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="majesticons:lightbulb-shine"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Lighting</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="c-skill-chip" data-tooltip="
+                                        &lt;div class='custom-tooltip'&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:vr'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Immersive Environments&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:gesture-tap'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;User Interaction&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:projector'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Projection Mapping&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:motion-sensor'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Sensor Integration&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                            &lt;div class='custom-tooltip-item'&gt;
+                                                
+                                                    &lt;div class='c-skill-chip__icon'&gt;
+                                                        &lt;iconify-icon icon='mdi:camera'&gt;&lt;/iconify-icon&gt;
+                                                    &lt;/div&gt;
+                                                
+                                                &lt;span&gt;Camera Systems&lt;/span&gt;
+                                            &lt;/div&gt;
+                                            
+                                        &lt;/div&gt;
+                                        ">
+                                        <div class="c-skill-chip__content">
+                                            
+                                            <div class="c-skill-chip__icon">
+                                                <iconify-icon icon="mdi:projector"></iconify-icon>
+                                            </div>
+                                            
+                                            <div class="c-skill-chip__label">Media Installations</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
                             </div>
                         </div>
-                        <div class="c-skill-chip__container">
-                            <div class="c-skill-chip__wrapper">
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:docker"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Docker</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="mdi:home-assistant"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Home Assistant</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="simple-icons:esphome"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">ESPHome</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="icon-park-outline:database-network-point"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Networking</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="uil:server-network"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Homelab</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="c-skill-chip">
-                                    <div class="c-skill-chip__content">
-                                        
-                                        <div class="c-skill-chip__icon">
-                                            <iconify-icon icon="simple-icons:linux"></iconify-icon>
-                                        </div>
-                                        
-
-                                        <div class="c-skill-chip__label">Linux</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-
-                            
-                        </div>
-                    </div>
                     </div>
                     
                 </div>
@@ -764,10 +788,24 @@
         opacity: 0;
         transition: opacity .5s ease-in-out;
     }
+    .custom-tooltip {
+        padding: 8px;
+        max-width: 200px;
+    }
+    .custom-tooltip-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+    .custom-tooltip-item iconify-icon {
+        margin-right: 8px;
+        font-size: 16px;
+    }
 </style>
 
 <script>
-    // Trigger repositioning
+    // Masonry
     var grid = document.querySelector('.grid');
     var msnry = new Masonry( grid, {
         itemSelector: '.grid-item',
@@ -775,8 +813,6 @@
         percentPosition: true,
         stagger : 30,
     });
-
-
     document.addEventListener("DOMContentLoaded", function(event){
         setTimeout(function(){
             msnry.layout();
@@ -784,17 +820,31 @@
         setTimeout(function(){
             msnry.layout();
         }, 1000);
-});
-
+    });
     msnry.on('layoutComplete', function() {
         console.log('layout is complete');
         var items = document.querySelectorAll('.grid-item');
-
         for (var i = 0; i < items.length; i++) {
             items[i].style.opacity = 1;
             transistionDelay = (i + 1) * 30;
             items[i].style.transitionDelay = transistionDelay + 'ms';
         }
+    });
+
+    // Tippy.js
+    document.addEventListener("DOMContentLoaded", function(event) {
+        tippy('[data-tooltip]', {
+            content: function(reference) {
+                return reference.getAttribute('data-tooltip');
+            },
+            allowHTML: true,
+            placement: 'bottom',
+            animation: 'fade',
+            theme: 'mts',
+            arrow: true,
+            interactive: true,
+            appendTo: document.body,  // <-- ensures tooltip is outside other stacking contexts
+        });
     });
 </script>
 
@@ -810,39 +860,16 @@
                     
                     <article class="c-project-card col col-4 col-d-6 col-t-12">
                         <div class="c-project-card__content">
-                          <a href="/project/what-happend-haw" class="c-project-card__image">
-                            
-                              <img loading="lazy" src="/assets/images/projects/whatHappendHAW/whatHappendHAW_0.jpg" alt="What happend, HAW?">
+                          <a href="/project/bachlorarbeit" class="c-project-card__image">
                                                      
                           </a>
                           <div class="c-project-card__info">
                             <div class="c-project-card__info-wrap">
-                              <h3 class="c-project-card__title">What happend, HAW?</h3>
+                              <h3 class="c-project-card__title">Bachelorthesis</h3>
                             </div>
                             <div class="c-project-card__info-wrap">
                               
-                              <div class="c-project-card__subtitle">Media Project der HAW Hamburg</div>
-                              
-                            </div>
-                          </div>
-                        </div>
-                      </article>
-                        
-                    
-                    <article class="c-project-card col col-4 col-d-6 col-t-12">
-                        <div class="c-project-card__content">
-                          <a href="/project/paper-synthi" class="c-project-card__image">
-                            
-                              <img loading="lazy" src="/assets/images/projects/paperSynthi/paperSynthi_2.png" alt="Paper Synthi">
-                                                     
-                          </a>
-                          <div class="c-project-card__info">
-                            <div class="c-project-card__info-wrap">
-                              <h3 class="c-project-card__title">Paper Synthi</h3>
-                            </div>
-                            <div class="c-project-card__info-wrap">
-                              
-                              <div class="c-project-card__subtitle">Synthesizer mit Spielfiguren auf Papier spielen</div>
+                              <div class="c-project-card__subtitle">Nutzung von Stable Diffusion zur Datensatzgenerierung für die Bilderkennung von Verschmutzungen in Sanitärbereichen</div>
                               
                             </div>
                           </div>
@@ -873,16 +900,39 @@
                     
                     <article class="c-project-card col col-4 col-d-6 col-t-12">
                         <div class="c-project-card__content">
-                          <a href="/project/bachlorarbeit" class="c-project-card__image">
+                          <a href="/project/paper-synthi" class="c-project-card__image">
+                            
+                              <img loading="lazy" src="/assets/images/projects/paperSynthi/paperSynthi_2.png" alt="Paper Synthi">
                                                      
                           </a>
                           <div class="c-project-card__info">
                             <div class="c-project-card__info-wrap">
-                              <h3 class="c-project-card__title">Bachelorthesis</h3>
+                              <h3 class="c-project-card__title">Paper Synthi</h3>
                             </div>
                             <div class="c-project-card__info-wrap">
                               
-                              <div class="c-project-card__subtitle">Nutzung von Stable Diffusion zur Datensatzgenerierung für die Bilderkennung von Verschmutzungen in Sanitärbereichen</div>
+                              <div class="c-project-card__subtitle">Synthesizer mit Spielfiguren auf Papier spielen</div>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                        
+                    
+                    <article class="c-project-card col col-4 col-d-6 col-t-12">
+                        <div class="c-project-card__content">
+                          <a href="/project/what-happend-haw" class="c-project-card__image">
+                            
+                              <img loading="lazy" src="/assets/images/projects/whatHappendHAW/whatHappendHAW_0.jpg" alt="What happend, HAW?">
+                                                     
+                          </a>
+                          <div class="c-project-card__info">
+                            <div class="c-project-card__info-wrap">
+                              <h3 class="c-project-card__title">What happend, HAW?</h3>
+                            </div>
+                            <div class="c-project-card__info-wrap">
+                              
+                              <div class="c-project-card__subtitle">Media Project der HAW Hamburg</div>
                               
                             </div>
                           </div>
@@ -903,6 +953,6 @@
     <link rel="stylesheet" href="/assets/css/lightbox.css">  
   </body>
   <footer class="footer">
-    <p>&copy; Martin Tasch, 2024</p>
+    <p>&copy; Martin Tasch, 2025</p>
   </footer>
 </html>
