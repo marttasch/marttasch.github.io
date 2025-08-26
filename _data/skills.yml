@@ -9,14 +9,12 @@
         - name: "JavaScript"
           icon: "mdi:language-javascript"
     - name: "Computer Vision"
-      icon: "mdi:eye"
+      icon: "hugeicons:vision"
       tooltip:
         - name: "PyTorch"
           icon: "simple-icons:pytorch"
         - name: "OpenCV"
           icon: "simple-icons:opencv"
-        - name: "Object Detection"
-          icon: "mdi:eye"
         - name: "Image Segmentation"
           icon: "mdi:vector-polygon"
         - name: "Image Classification"
@@ -25,13 +23,11 @@
       icon: "mdi:server"
       tooltip:
         - name: "Linux"
-          icon: "mdi:linux"
+          icon: "cib:linux"
         - name: "Docker"
           icon: "mdi:docker"
-        - name: "Networking"
-          icon: "mdi:network"
-        - name: "Homelab"
-          icon: "mdi:home-assistant"
+        - name: Homelab
+          icon: "uil:server-network"
     - name: "Web Development"
       icon: "hugeicons:web-design-02"
       tooltip:
@@ -61,10 +57,8 @@
     - name: "Electrical Installation"
       icon: "ic:twotone-electrical-services"
       tooltip:
-        - name: "230V AC Wiring"
+        - name: "Electrical Wiring"
           icon: "mdi:power-plug"
-        - name: "24V DC Wiring"
-          icon: "mdi:current-dc"
         - name: "Lighting Systems"
           icon: "mdi:lightbulb-on"
         - name: "Circuit Design & Protection"
@@ -84,7 +78,7 @@
 - category: "Interactive Media"
   icon: "ph:hand-tap-fill"
   skills:
-    - name: "Real-Time Media Tools"
+    - name: "Interactive Media Tools"
       icon: "ri:video-on-ai-fill"
       tooltip:
         - name: "TouchDesigner"
@@ -104,7 +98,7 @@
       icon: "mdi:projector"
       tooltip:
         - name: "Immersive Environments"
-          icon: "mdi:vr"
+          icon: "fluent:cube-28-regular"
         - name: "User Interaction"
           icon: "mdi:gesture-tap"
         - name: "Projection Mapping"
