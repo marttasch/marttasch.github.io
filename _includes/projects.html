@@ -6,7 +6,7 @@
                 <h2>My Projects</h2>
                 <div id="projectWrapper">
                     {% assign c = "c-project-card" %}
-                    {% for project in site.projects %}
+                    {% for project in site.projects reversed %}
                     <article class="{{c}} col col-4 col-d-6 col-t-12">
                         <div class="{{c}}__content">
                           <a href="{{ project.url }}" class="{{c}}__image">
