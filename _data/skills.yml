@@ -1,114 +1,207 @@
-- category: Programming
-  icon: "ph:code-bold"
+- category: "Software & AI"
+  icon: "streamline:ai-prompt-spark-solid"
   skills:
-  - name: Python
-    icon: "mdi:language-python"
-  - name: JavaScript
-    icon: "mdi:language-javascript"
-  small:
-  - name: React Native
-    icon: "simple-icons:react"
+    - name: "Programming"
+      icon: "ph:code-bold"
+      tooltip:
+        - name: "Python"
+          icon: "mdi:language-python"
+        - name: "JavaScript"
+          icon: "mdi:language-javascript"
+    - name: "Computer Vision"
+      icon: "mdi:eye"
+      tooltip:
+        - name: "PyTorch"
+          icon: "simple-icons:pytorch"
+        - name: "OpenCV"
+          icon: "simple-icons:opencv"
+        - name: "Object Detection"
+          icon: "mdi:eye"
+        - name: "Image Segmentation"
+          icon: "mdi:vector-polygon"
+        - name: "Image Classification"
+          icon: "mdi:image-filter"
+    - name: "DevOps & Infrastructure"
+      icon: "mdi:server"
+      tooltip:
+        - name: "Linux"
+          icon: "mdi:linux"
+        - name: "Docker"
+          icon: "mdi:docker"
+        - name: "Networking"
+          icon: "mdi:network"
+        - name: "Homelab"
+          icon: "mdi:home-assistant"
+    - name: "Web Development"
+      icon: "hugeicons:web-design-02"
+      tooltip:
+        - name: "HTML"
+          icon: "mdi:language-html5"
+        - name: "CSS"
+          icon: "mdi:language-css3"
+        - name: "Jekyll"
+          icon: "simple-icons:jekyll"
+        - name: "Grav"
+          icon: "simple-icons:grav"
+        - name: "React Native"
+          icon: "simple-icons:react"
 
-- category: Computer Vision
-  icon: "mdi:eye"
+- category: "Electronics"
+  icon: "ph:circuitry-fill"
   skills:
-  - name: PyTorch
-    icon: "simple-icons:pytorch"
-  - name: OpenCV
-    icon: "simple-icons:opencv"
-  small:
-  - name: Object Detection
-    icon: "mdi:eye"
-  - name: Image Segmentation
-    icon: "mdi:vector-polygon"
-  - name: Image Classification
-    icon: "mdi:image-filter"
+    - name: "Embedded Systems"
+      icon: "mdi:raspberry-pi"
+      tooltip:
+        - name: "Raspberry Pi"
+          icon: "cib:raspberry-pi"
+        - name: "ESP32"
+          icon: "simple-icons:espressif"
+        - name: "Arduino"
+          icon: "simple-icons:arduino"
+    - name: "Electrical Installation"
+      icon: "ic:twotone-electrical-services"
+      tooltip:
+        - name: "230V AC Wiring"
+          icon: "mdi:power-plug"
+        - name: "24V DC Wiring"
+          icon: "mdi:current-dc"
+        - name: "Lighting Systems"
+          icon: "mdi:lightbulb-on"
+        - name: "Circuit Design & Protection"
+          icon: "mdi:fuse"
+    - name: "IoT & Automation"
+      icon: "mdi:home-automation"
+      tooltip:
+        - name: "Home Automation"
+          icon: "simple-icons:homeassistant"
+        - name: "KNX"
+          icon: "cbi:knx"
+        - name: "DALI"
+          icon: "mdi:lightbulb-auto"
+        - name: "MQTT"
+          icon: "simple-icons:mqtt"
 
-- category: Embedded Systems
-  icon: "mdi:chip"
+- category: "Interactive Media"
+  icon: "ph:hand-tap-fill"
   skills:
-  - name: arduino
-    icon: "simple-icons:arduino"
-  - name: raspberry pi
-    icon: "mdi:raspberry-pi"
-  - name: esp32
-    icon: "mdi:chip"
+    - name: "Real-Time Media Tools"
+      icon: "ri:video-on-ai-fill"
+      tooltip:
+        - name: "TouchDesigner"
+          image: "assets/images/icons/touchdesigner.png"
+    - name: "Lighting"
+      icon: "majesticons:lightbulb-shine"
+      tooltip:
+        - name: "Lighting Design"
+          icon: "mdi:lightbulb-spot"
+        - name: "LED Installations"
+          icon: "mdi:led-strip-variant"
+        - name: "Event Lighting"
+          icon: "mdi:spotlight"
+        - name: "Smart Home Integration"
+          icon: "mdi:home-lightbulb"
+    - name: "Media Installations"
+      icon: "mdi:projector"
+      tooltip:
+        - name: "Immersive Environments"
+          icon: "mdi:vr"
+        - name: "User Interaction"
+          icon: "mdi:gesture-tap"
+        - name: "Projection Mapping"
+          icon: "mdi:projector"
+        - name: "Sensor Integration"
+          icon: "mdi:motion-sensor"
+        - name: "Camera Systems"
+          icon: "mdi:camera"
 
-- category: Interactive Media
-  icon: "mdi:gamepad-variant"
-  skills:
-  - name: TouchDesigner
-    image: "assets/images/icons/touchdesigner.png"
-  - name: Unreal Engine
-    icon: "mdi:unreal"
 
-- category: Light
-  icon: "mdi:lightbulb-on-outline"
-  skills:
-  - name: Lighting Design
-    icon: "mdi:lightbulb-on-outline"
-  - name: custom LED
-    icon: "mdi:led-strip-variant"
-  - name: KNX
-    icon: "cbi:knx"
-  small:
-  - name: GrandMA
-    icon: "mdi:lightbulb-on-outline"
 
-- category: Video
-  icon: "mdi:video-vintage"
-  skills:
-  - name: Video Streaming
-    icon: "solar:play-stream-bold"
-  - name: Projection Mapping
-    icon: "mdi:projector"
 
-# - category: Design
-#   icon: "mdi:format-paint"
+# - category: Programming
+#   icon: "ph:code-bold"
 #   skills:
-#   - name: Adobe Creative Cloud
-#     icon: "mdi:adobe"
+#   - name: Python
+#     icon: "mdi:language-python"
+#     tooltip: Hello World, I'm a Tooltip
+#   - name: Webdesign
+#     icon: "hugeicons:web-design-02"
 #   small:
-#   - name: Blender
-#     icon: "simple-icons:blender"
-#     small: true
-#   - name: Photoshop
-#     icon: "simple-icons:adobephotoshop"
-#     small: true
-#   - name: Illustrator
-#     icon: "simple-icons:adobeillustrator"
-#     small: true
-#   - name: After Effects
-#     icon: "simple-icons:adobeaftereffects"
-#     small: true
-#   - name: Premiere Pro
-#     icon: "simple-icons:adobepremierepro"
-#     small: true
+#   - name: JavaScript
+#     icon: "mdi:language-javascript"
+#   - name: React Native
+#     icon: "simple-icons:react"
+
+# - category: Computer Vision
+#   icon: "mdi:eye"
+#   skills:
+#   - name: PyTorch
+#     icon: "simple-icons:pytorch"
+#   - name: OpenCV
+#     icon: "simple-icons:opencv"
+#   small:
+#   - name: Object Detection
+#     icon: "mdi:eye"
+#   - name: Image Segmentation
+#     icon: "mdi:vector-polygon"
+#   - name: Image Classification
+#     icon: "mdi:image-filter"
+
+# - category: Embedded Systems
+#   icon: "mdi:chip"
+#   skills:
+#   - name: arduino
+#     icon: "simple-icons:arduino"
+#   - name: raspberry pi
+#     icon: "mdi:raspberry-pi"
+#   - name: esp32
+#     icon: "mdi:chip"
+
+# - category: Interactive Media
+#   icon: "mdi:gamepad-variant"
+#   skills:
+#   - name: TouchDesigner
+#     image: "assets/images/icons/touchdesigner.png"
+#   - name: Unreal Engine
+#     icon: "mdi:unreal"
+
+# - category: DevOps
+#   icon: "mdi:server-network"
+#   skills: 
+#   - name: Linux
+#     icon: "simple-icons:linux"
+#   - name: Docker
+#     icon: "mdi:docker"
+#   - name: Networking
+#     icon: "icon-park-outline:database-network-point"
+#   - name: Homelab
+#     icon: "uil:server-network"
+#   small:
+#   - name: Home Assistant
+#     icon: "mdi:home-assistant"
+#   - name: ESPHome
+#     icon: "simple-icons:esphome"
+
+# - category: Light
+#   icon: "mdi:lightbulb-on-outline"
+#   skills:
+#   - name: Lighting Design
+#     icon: "mdi:lightbulb-on-outline"
+#   - name: custom LED
+#     icon: "mdi:led-strip-variant"
+#   - name: KNX
+#     icon: "cbi:knx"
+#   small:
+#   - name: GrandMA
+#     icon: "mdi:lightbulb-on-outline"
 
 
+# # - category: Webdesign
+# #   icon: "mdi:web"
+# #   skills:
+# #   - name: HTML
+# #     icon: "mdi:language-html5"
+# #   - name: CSS
+# #     icon: "mdi:language-css3"
+# #   - name: Jekyll
+# #     icon: "simple-icons:jekyll"
 
-- category: Webdesign
-  icon: "mdi:web"
-  skills:
-  - name: HTML
-    icon: "mdi:language-html5"
-  - name: CSS
-    icon: "mdi:language-css3"
-  - name: Jekyll
-    icon: "simple-icons:jekyll"
-
-- category: DevOps
-  icon: "mdi:server-network"
-  skills: 
-  - name: Docker
-    icon: "mdi:docker"
-  - name: Home Assistant
-    icon: "mdi:home-assistant"
-  - name: ESPHome
-    icon: "simple-icons:esphome"
-  - name: Networking
-    icon: "icon-park-outline:database-network-point"
-  - name: Homelab
-    icon: "uil:server-network"
-  - name: Linux
-    icon: "simple-icons:linux"

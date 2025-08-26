@@ -132,3 +132,40 @@
         max-width: 100%;
     }
 }
+
+
+.tippy-box[data-theme~='mts'] {
+    background-color: rgba($secondary-color, 0.4); /* semi-transparent */
+
+    /* Add blur effect */
+    backdrop-filter: blur(10px);   /* blurs content behind the tooltip */
+    -webkit-backdrop-filter: blur(10px); /* for Safari support */
+    
+    /* Optional: make edges smoother */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    transform: scale(1.2);
+    margin-top: 0.8em;
+
+    img{
+        transform: scale(0.8);
+        margin-right: 0.1em !important;
+    }
+}
+
+.tippy-box[data-theme~='mts'][data-placement^='top']>.tippy-arrow::before {
+    border-top-color: rgba($secondary-color, 0.4);;
+}
+
+.tippy-box[data-theme~='mts'][data-placement^='bottom']>.tippy-arrow::before {
+    border-bottom-color: rgba($primary-color, 0.6);;
+}
+
+.tippy-box[data-theme~='mts'][data-placement^='left']>.tippy-arrow::before {
+    border-left-color: rgba($secondary-color, 0.4);;
+}
+
+.tippy-box[data-theme~='mts'][data-placement^='right']>.tippy-arrow::before {
+    border-right-color: rgba($secondary-color, 0.4);;
+}

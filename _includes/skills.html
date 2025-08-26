@@ -1,84 +1,114 @@
 {% if site.data.info.skills_enabled %}
-<!-- https://github.com/desandro/masonry -->
+<!-- Masonry -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!-- Tippy.js -->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 
 <section id="skills" class="skills">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h2>Skills</h2>
-
-                <div
-                    id="skill-wrapper"
-                    class="grid">
-
+                <div id="skill-wrapper" class="grid">
                     {% for category in site.data.skills %}
                     {% assign c = "c-skill-chip" %}
                     <div class="grid-sizer"></div>
                     <div class="grid-item">
-                    <div class="{{c}}__category">
-                        <div class="{{c}}__category__header">
-                            <div class="{{c}}__category__header__icon">
-                                <iconify-icon class="{{c}}__category__icon" icon="{{ category.icon }}"></iconify-icon>
+                        <div class="{{c}}__category">
+                            <div class="{{c}}__category__header">
+                                <div class="{{c}}__category__header__icon">
+                                    <iconify-icon class="{{c}}__category__icon" icon="{{ category.icon }}"></iconify-icon>
+                                </div>
+                                <div class="{{c}}__category__header__title">
+                                    <h3>{{ category.category }}</h3>
+                                </div>
                             </div>
-                            <div class="{{c}}__category__header__title">
-                                <h3>{{ category.category }}</h3>
+                            <div class="{{c}}__container">
+                                <div class="{{c}}__wrapper">
+                                    {% for skill in category.skills %}
+                                    <div class="{{c}}"
+                                        {% if skill.tooltip %}
+                                        data-tooltip="
+                                        <div class='custom-tooltip'>
+                                            {% for item in skill.tooltip %}
+                                            <div class='custom-tooltip-item'>
+                                                {% if item.image %}
+                                                    <div class='{{c}}__image'>
+                                                        <img loading='lazy' src='{{ item.image }}' alt='{{ item.name }}'>
+                                                    </div>       
+                                                
+                                                {% else %}
+                                                    <div class='{{c}}__icon'>
+                                                        <iconify-icon icon='{{ item.icon }}'></iconify-icon>
+                                                    </div>
+                                                {% endif %}
+                                                <span>{{ item.name }}</span>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                        "
+                                        {% endif %}>
+                                        <div class="{{c}}__content">
+                                            {% if skill.image %}
+                                            <div class="{{c}}__image">
+                                                <img loading="lazy" src="{{ skill.image }}" alt="{{ skill.name }}">
+                                            </div>
+                                            {% else if skill.icon %}
+                                            <div class="{{c}}__icon">
+                                                <iconify-icon icon="{{ skill.icon }}"></iconify-icon>
+                                            </div>
+                                            {% else %}
+                                            <div class="{{c}}__icon">
+                                                <iconify-icon icon="ph:placeholder-bold"></iconify-icon>
+                                            </div>
+                                            {% endif %}
+                                            <div class="{{c}}__label">{{ skill.name }}</div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                {% if category.small %}
+                                {% assign c = "c-skill-chip--small c-skill-chip" %}
+                                {% assign fc = "c-skill-chip--flex-collumn__wrapper" %}
+                                <div class="{{c}}__wrapper  {{fc}}">
+                                    {% for small in category.small %}
+                                    <div class="{{c}}"
+                                        {% if small.tooltip %}
+                                        data-tooltip="
+                                        <div class='custom-tooltip'>
+                                            {% for item in small.tooltip %}
+                                            <div class='custom-tooltip-item'>
+                                                <iconify-icon icon='{{ item.icon }}'></iconify-icon>
+                                                <span>{{ item.name }}</span>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                        "
+                                        {% endif %}>
+                                        <div class="{{c}}__content">
+                                            {% if small.image %}
+                                            <div class="{{c}}__image">
+                                                <img loading="lazy" src="{{ small.image }}" alt="{{ small.name }}">
+                                            </div>
+                                            {% else if small.icon %}
+                                            <div class="{{c}}__icon">
+                                                <iconify-icon icon="{{ small.icon }}"></iconify-icon>
+                                            </div>
+                                            {% else %}
+                                            <div class="{{c}}__icon">
+                                                <iconify-icon icon="ph:placeholder-bold"></iconify-icon>
+                                            </div>
+                                            {% endif %}
+                                            <div class="{{c}}__label">{{ small.name }}</div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
                             </div>
                         </div>
-                        <div class="{{c}}__container">
-                            <div class="{{c}}__wrapper">
-                                {% for skill in category.skills %}
-                                <div class="{{c}}">
-                                    <div class="{{c}}__content">
-                                        {% if skill.image %}
-                                        <div class="{{c}}__image">
-                                            <img loading="lazy" src="{{ skill.image }}" alt="{{ skill.name }}">
-                                        </div>
-                                        {% else if skill.icon %}
-                                        <div class="{{c}}__icon">
-                                            <iconify-icon icon="{{ skill.icon }}"></iconify-icon>
-                                        </div>
-                                        {% else %}
-                                        <div class="{{c}}__icon">
-                                            <iconify-icon icon="ph:placeholder-bold"></iconify-icon>
-                                        </div>
-                                        {% endif %}
-
-                                        <div class="{{c}}__label">{{ skill.name }}</div>
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
-
-                            {% if category.small %}
-                            {% assign c = "c-skill-chip--small c-skill-chip" %}
-                            {% assign fc = "c-skill-chip--flex-collumn__wrapper" %}
-                            <div class="{{c}}__wrapper  {{fc}}">
-                                {% for small in category.small %}
-                                <div class="{{c}}">
-                                    <div class="{{c}}__content">
-                                        {% if small.image %}
-                                        <div class="{{c}}__image">
-                                            <img loading="lazy" src="{{ small.image }}" alt="{{ small.name }}">
-                                        </div>
-                                        {% else if small.icon %}
-                                        <div class="{{c}}__icon">
-                                            <iconify-icon icon="{{ small.icon }}"></iconify-icon>
-                                        </div>
-                                        {% else %}
-                                        <div class="{{c}}__icon">
-                                            <iconify-icon icon="ph:placeholder-bold"></iconify-icon>
-                                        </div>
-                                        {% endif %}
-
-                                        <div class="{{c}}__label">{{ small.name }}</div>
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
-                            {% endif %}
-                        </div>
-                    </div>
                     </div>
                     {% endfor %}
                 </div>
@@ -92,10 +122,24 @@
         opacity: 0;
         transition: opacity .5s ease-in-out;
     }
+    .custom-tooltip {
+        padding: 8px;
+        max-width: 200px;
+    }
+    .custom-tooltip-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+    .custom-tooltip-item iconify-icon {
+        margin-right: 8px;
+        font-size: 16px;
+    }
 </style>
 
 <script>
-    // Trigger repositioning
+    // Masonry
     var grid = document.querySelector('.grid');
     var msnry = new Masonry( grid, {
         itemSelector: '.grid-item',
@@ -103,8 +147,6 @@
         percentPosition: true,
         stagger : 30,
     });
-
-
     document.addEventListener("DOMContentLoaded", function(event){
         setTimeout(function(){
             msnry.layout();
@@ -112,17 +154,31 @@
         setTimeout(function(){
             msnry.layout();
         }, 1000);
-});
-
+    });
     msnry.on('layoutComplete', function() {
         console.log('layout is complete');
         var items = document.querySelectorAll('.grid-item');
-
         for (var i = 0; i < items.length; i++) {
             items[i].style.opacity = 1;
             transistionDelay = (i + 1) * 30;
             items[i].style.transitionDelay = transistionDelay + 'ms';
         }
+    });
+
+    // Tippy.js
+    document.addEventListener("DOMContentLoaded", function(event) {
+        tippy('[data-tooltip]', {
+            content: function(reference) {
+                return reference.getAttribute('data-tooltip');
+            },
+            allowHTML: true,
+            placement: 'bottom',
+            animation: 'fade',
+            theme: 'mts',
+            arrow: true,
+            interactive: true,
+            appendTo: document.body,  // <-- ensures tooltip is outside other stacking contexts
+        });
     });
 </script>
 {% endif %}
