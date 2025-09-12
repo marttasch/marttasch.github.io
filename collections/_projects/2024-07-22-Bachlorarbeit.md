@@ -1,7 +1,7 @@
 ---
 date: 2024-07-22
-title: Bachelorthesis
-subtitle: Nutzung von Stable Diffusion zur Datensatzgenerierung für die Bilderkennung von Verschmutzungen in Sanitärbereichen
+title: Bachelor Thesis
+subtitle: Using Stable Diffusion to generate datasets for image recognition of contamination in sanitary areas
 # image:
 #     path: /assets/images/projects/cnnRockPaperScissor/.png
 # gallery:
@@ -13,7 +13,7 @@ subtitle: Nutzung von Stable Diffusion zur Datensatzgenerierung für die Bilderk
 layout: projects
 ---
 
-In meiner Bachelorarbeit untersuche ich die Anwendung von Stable Diffusion zur Generierung von Datensätzen für die Bilderkennung, speziell im Sanitärbereich. Die Methodik umfasst die Anpassung von Stable Diffusion für diese spezifische Anwendung mittels einer Low Rank Adaptation (LoRA) und nutzt das Realistic Vision 5.1 Modell zur Erstellung photorealistischer Bilder. Die Arbeit demonstriert die Machbarkeit der automatisierten Datensatzerstellung mit Stable Diffusion und erzielt vielversprechende Ergebnisse mit einer Validierungsgenauigkeit von über 90 % bei den generierten Datensätzen, bewertet durch ein trainiertes InceptionV3 Bilderkennungsmodell. Verbesserungspotentiale wurden identifiziert, darunter die Notwendigkeit, die realistische Darstellung der Verschmutzung durch einen größeren und realistischeren Trainingsdatensatz zu verbessern und das Modell mittels LoRA weiter anzupassen. Zukünftige Arbeiten sollten außerdem die Erstellung eines größeren, ausgewogeneren Evaluationsdatensatzes in Betracht ziehen, um aussagekräftigere Ergebnisse zu erzielen.
+In my bachelor thesis, I investigate the application of Stable Diffusion for generating datasets for image recognition, specifically in the sanitary sector. The methodology involves adapting Stable Diffusion for this specific application using Low Rank Adaptation (LoRA) and utilizes the Realistic Vision 5.1 model to create photorealistic images. The thesis demonstrates the feasibility of automated dataset creation with Stable Diffusion and achieves promising results with a validation accuracy of over 90% for the generated datasets, evaluated by a trained InceptionV3 image recognition model. Potential areas for improvement have been identified, including the need to improve the realistic representation of pollution through a larger and more realistic training dataset and to further adapt the model using LoRA. Future work should also consider creating a larger, more balanced evaluation dataset to achieve more meaningful results.
 
-Das Entwickelte Framework zur automatisierten Datensatzgenerierung ist auf [Github verfügbar](https://github.com/marttasch/StableDiffusion_generateDataset). <br>
-Die vollständige Arbeit ist auf auf dem [Reposit der HAW Hamburg](https://reposit.haw-hamburg.de/handle/20.500.12738/16340) verfügbar.
+The developed framework for automated data set generation is available on [Github](https://github.com/marttasch/StableDiffusion_generateDataset).
+The complete paper is available on the [HAW Hamburg repository](https://reposit.haw-hamburg.de/handle/20.500.12738/16340).

@@ -1,7 +1,7 @@
 ---
 date: 2022-02-22
 title: What happend, HAW?
-subtitle: Media Project der HAW Hamburg
+subtitle: Media Project at HAW Hamburg
 image:
   path: /assets/images/projects/whatHappendHAW/whatHappendHAW_0.jpg
 gallery:
@@ -15,8 +15,8 @@ layout: projects
 ---
 
 
-Im Rahmen meines Medientechnik-Studiums hatte ich die Gelegenheit, an einem Medienprojekt in einem virtuellen Produktionsstudio in Hamburg teilzunehmen. Wir haben eine Live-on-Tape-Show produziert, bei der ein Live-Musik-Act 5 Songs in 5 verschiedenen Welten performt hat. Die Welten wurden mit Hilfe von Unreal Engine und einer 18 Meter langen LED-Wand realisiert. Die Show wurde im virtuellen Studio aufgezeichnet und später ohne Nachbearbeitung bei Tide TV ausgestrahlt.
+As part of my media technology studies, I had the opportunity to participate in a media project in a virtual production studio in Hamburg. We produced a live-on-tape show in which a live music act performed five songs in five different worlds. The worlds were created using Unreal Engine and an 18-meter-long LED wall. The show was recorded in the virtual studio and later broadcast on Tide TV without post-production.
 
-Meine Verantwortung lag in der Erstellung der Inhalte für die LED-Wand in der Unreal Engine. Zusätzlich dazu habe ich vor Ort die Einrichtung vorgenommen und während der Show die Engine bedient. Dazu entwickelte ich eine Logik, die es ermöglichte, die 5 verschiedenen Welten in einem Unreal Engine-Projekt zu laden und während der Live-Show mit minimaler Latenz zwischen ihnen zu wechseln.
+My responsibility was to create the content for the LED wall in Unreal Engine. In addition, I set up the equipment on site and operated the engine during the show. To do this, I developed a logic that made it possible to load the 5 different worlds into an Unreal Engine project and switch between them during the live show with minimal latency.
 
-Die ganze Sendung ist auf [YouTube](https://www.youtube.com/watch?v=MyQHTNmGuHU) zu sehen.
+The entire broadcast can be viewed on [YouTube](https://www.youtube.com/watch?v=MyQHTNmGuHU).
