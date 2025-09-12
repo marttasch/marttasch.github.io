@@ -21,9 +21,13 @@ linkedin_url: https://www.linkedin.com/in/martin-tasch-945b24227/
 scrollToSection: skills
 
 # about me
-aboutMe_enabled: false
-#aboutMe_text: >
-
+aboutMe_enabled: true
+aboutMe_text: >
+  I'm a Media Technician who loves diving into the world of tech and media.
+  I thrive on blending creativity with technology, whether it's through large-scale interactive media installations, smart lighting solutions, or innovative digital projects.
+  My journey includes coding, computer vision, web development, and Linux server.
+  I also love tinkering with microcontrollers and electronics, and I have a knack for home automation.
+  A continuous learner at heart, I'm a strong advocate of open-source software, always eager to explore new technologies and share knowledge. 
 # skills
 skills_enabled: true
 

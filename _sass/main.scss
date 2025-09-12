@@ -358,9 +358,28 @@ section {
 }
 
 // ----- About ----- //
-#about{
-   color: $text-color-light;
+#about {
+    color: $text-color-light;
+    position: relative;
+  
+    p {
+    font-size: 1.3em;
+    margin-left: 2em;
+    position: relative;
+  }
+   
+    p::before {
+    content: '';
+    position: absolute;
+    left: -1em;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: $accent-color;
+    border-radius: 5px;
+  }
 }
+  
 
 // ----- Skills ----- //
 

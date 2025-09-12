@@ -42,39 +42,6 @@
         - name: "React Native"
           icon: "simple-icons:react"
 
-- category: "Electronics"
-  icon: "ph:circuitry-fill"
-  skills:
-    - name: "Embedded Systems"
-      icon: "mdi:raspberry-pi"
-      tooltip:
-        - name: "Raspberry Pi"
-          icon: "cib:raspberry-pi"
-        - name: "ESP32"
-          icon: "simple-icons:espressif"
-        - name: "Arduino"
-          icon: "simple-icons:arduino"
-    - name: "Electrical Installation"
-      icon: "ic:twotone-electrical-services"
-      tooltip:
-        - name: "Electrical Wiring"
-          icon: "mdi:power-plug"
-        - name: "Lighting Systems"
-          icon: "mdi:lightbulb-on"
-        - name: "Circuit Design & Protection"
-          icon: "mdi:fuse"
-    - name: "IoT & Automation"
-      icon: "mdi:home-automation"
-      tooltip:
-        - name: "Home Automation"
-          icon: "simple-icons:homeassistant"
-        - name: "KNX"
-          icon: "cbi:knx"
-        - name: "DALI"
-          icon: "mdi:lightbulb-auto"
-        - name: "MQTT"
-          icon: "simple-icons:mqtt"
-
 - category: "Interactive Media"
   icon: "ph:hand-tap-fill"
   skills:
@@ -107,6 +74,39 @@
           icon: "mdi:motion-sensor"
         - name: "Camera Systems"
           icon: "mdi:camera"
+
+- category: "Electronics"
+  icon: "ph:circuitry-fill"
+  skills:
+    - name: "Embedded Systems"
+      icon: "mdi:raspberry-pi"
+      tooltip:
+        - name: "Raspberry Pi"
+          icon: "cib:raspberry-pi"
+        - name: "ESP32"
+          icon: "simple-icons:espressif"
+        - name: "Arduino"
+          icon: "simple-icons:arduino"
+    - name: "Electrical Installation"
+      icon: "ic:twotone-electrical-services"
+      tooltip:
+        - name: "Electrical Wiring"
+          icon: "mdi:power-plug"
+        - name: "Lighting Systems"
+          icon: "mdi:lightbulb-on"
+        - name: "Circuit Design & Protection"
+          icon: "mdi:fuse"
+    - name: "IoT & Automation"
+      icon: "mdi:home-automation"
+      tooltip:
+        - name: "Home Automation"
+          icon: "simple-icons:homeassistant"
+        - name: "KNX"
+          icon: "cbi:knx"
+        - name: "DALI"
+          icon: "mdi:lightbulb-auto"
+        - name: "MQTT"
+          icon: "simple-icons:mqtt"
 
 
 
