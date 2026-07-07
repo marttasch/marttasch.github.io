@@ -22,6 +22,13 @@
             </a>
           </div>
           {% endif %}
+          {% if site.data.info.xing_url %}
+          <div class="header-icon-wrapper">
+            <a aria-label="My XING Profile" target="_blank" href="{{ site.data.info.xing_url }}">
+              <iconify-icon icon="mdi:xing"></iconify-icon>
+            </a>
+          </div>
+          {% endif %}
           {% if site.data.info.fiverr_url %}
           <div class="header-icon-wrapper">
             <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data.info.fiverr_url }}" >
