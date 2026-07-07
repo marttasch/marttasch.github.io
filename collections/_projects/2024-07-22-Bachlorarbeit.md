@@ -2,8 +2,8 @@
 date: 2024-07-22
 title: Bachelor Thesis
 subtitle: Using Stable Diffusion to generate datasets for image recognition of contamination in sanitary areas
-# image:
-#     path: /assets/images/projects/cnnRockPaperScissor/.png
+image:
+    path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header.jpeg
 # gallery:
 #     - path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_02.png
 #     - path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_03.png
