@@ -168,7 +168,7 @@ a img {
     box-shadow: 0px 0px 20px 1px rgba($primary-color, 0.6);
     
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     width: 80%;
     max-width: 800px;
@@ -260,21 +260,21 @@ a img {
     text-align: center;
 }
 
-.header-links {
+.navigation-links {
     margin: 10px
 }
-.header-links .link {
+.navigation-links .link {
     color: $text-color;
     text-decoration: none;
     font-size: 1.3em;
     font-weight: 600;
-    margin: 10px;
+    margin: 1rem;
     transition: all .7s ease;
     position: relative;
 }
 
 @media screen and (max-width: $mobile) {
-    .header-links .link {
+    .navigation-links .link {
         font-size: 1em
     }
 }
@@ -298,11 +298,25 @@ a img {
     transition: all .3s ease-in-out;
 }
 
-.header-icons iconify-icon:active,
-.header-icons iconify-icon:hover {
+.header-icon-wrapper:active iconify-icon,
+.header-icon-wrapper:hover iconify-icon {
     color: $accent-color;
     border: 2px solid rgba(0,0,0,0);
     transform: scale(1.2) rotate(0deg);
+}
+.header-icon-wrapper a {
+    text-decoration: none;
+}
+.header-icon-wrapper p {
+    opacity: 0;
+    margin: 0;
+    transform: translateY(-30px);
+    transition: all .4s ease-in-out
+}
+.header-icon-wrapper:hover p {
+    opacity: 1;
+    margin: 0;
+    transform: translateY(-10px);
 }
 
 @media screen and (max-width: $mobile) {
@@ -313,17 +327,27 @@ a img {
     }
 }
 
-.header-arrowDown-container{
+.header-navigation-container{
     position: absolute;
-    bottom: 0px;
+    bottom: 50px;
     left: 50%;
     transform: translate(-50%, 0%);
+
+    .navigation-links{
+        border: rgba(255,255,255,0.1) solid 1px;
+        border-radius: 5px;
+        padding: 10px 5px;
+        background-color: rgba(255, 255, 255, 0.08); // Semi-transparent background
+    }
 }
 
 .down {
     position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     font-size: 8rem;
-    cursor: pointer
+    cursor: pointer;
 }
 .down:hover {
     color: darken($accent-color, 5%);

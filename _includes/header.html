@@ -19,6 +19,7 @@
           <div class="header-icon-wrapper">
             <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data.info.linkedin_url }}">
               <iconify-icon icon="mdi:linkedin"></iconify-icon>
+              <p class="">LinkedIn</p>
             </a>
           </div>
           {% endif %}
@@ -26,6 +27,7 @@
           <div class="header-icon-wrapper">
             <a aria-label="My XING Profile" target="_blank" href="{{ site.data.info.xing_url }}">
               <iconify-icon icon="mdi:xing"></iconify-icon>
+              <p class="">XING</p>
             </a>
           </div>
           {% endif %}
@@ -33,6 +35,7 @@
           <div class="header-icon-wrapper">
             <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data.info.fiverr_url }}" >
               <iconify-icon icon="jam:fiverr"></iconify-icon>
+              <p class="">Fiverr</p>
             </a>
           </div>
           {% endif %}
@@ -40,6 +43,7 @@
           <div class="header-icon-wrapper">
             <a aria-label="My Github Profile" target="_blank" href="{{ site.data.info.github_url }}">
               <iconify-icon icon="mdi:github"></iconify-icon>
+              <p class="">GitHub</p>
             </a>
           </div>
           {% endif %}
@@ -47,16 +51,18 @@
           <div class="header-icon-wrapper">
             <a aria-label="Send Email" href="mailto:{{ site.data.info.email }}" target="_blank">
               <iconify-icon icon="ic:round-email"></iconify-icon>
+              <p class="">E-Mail</p>
             </a>
           </div>
           {% endif %}
         </div>
-        <div class="header-links">
-          {% include navigation.html %}
-        </div>
+        
       </div>
     </div>
-    <div class="header-arrowDown-container">
+    <div class="header-navigation-container">
+      <!-- <div class="navigation-links">
+        {% include navigation.html %}
+      </div> -->
       <a class="down" href="#{{ site.data.info.scrollToSection }}" data-scroll>
         <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
       </a>
