@@ -1,32 +1,56 @@
-- category: "Software & AI"
-  icon: "streamline:ai-prompt-spark-solid"
+- category: "AI & Machine Learning"
+  icon: streamline-flex:ai-chip-robot-remix
   skills:
-    - name: "Programming"
+    - name: "Computer Vision"
+      icon: "hugeicons:vision"
+      tooltip:
+        # - name: "PyTorch"
+        #   icon: "simple-icons:pytorch"
+        # - name: "OpenCV"
+        #   icon: "simple-icons:opencv"
+        - name: "Object Detection"
+          icon: mdi:cube-scan
+        - name: "Image Classification"
+          icon: "mdi:image-filter"
+        - name: "Image Segmentation"
+          icon: "mdi:vector-polygon"
+    - name: "Generative AI"
+      icon: lucide:sparkles
+      tooltip:
+        - name: "Dataset generation"
+          icon: mdi:database
+        - name: Fine-Tuning / Training
+          icon: fluent:brain-circuit-20-filled
+        - name: "Large Language Models"
+          icon: lucide:bot-message-square
+        - name: "Stable Diffusion"
+          icon: mdi:image-filter
+    - name: "Tools"
+      icon: tabler:tools
+      tooltip:
+        - name: "PyTorch"
+          icon: "simple-icons:pytorch"
+        - name: "OpenCV"
+          icon: "simple-icons:opencv"
+    
+- category: "Software & Infrastructure"
+  icon: material-symbols:terminal-rounded
+  skills:
+    - name: "Development"
       icon: "ph:code-bold"
       tooltip:
         - name: "Python"
           icon: "mdi:language-python"
         - name: "JavaScript"
           icon: "mdi:language-javascript"
-    - name: "Computer Vision"
-      icon: "hugeicons:vision"
-      tooltip:
-        - name: "PyTorch"
-          icon: "simple-icons:pytorch"
-        - name: "OpenCV"
-          icon: "simple-icons:opencv"
-        - name: "Image Segmentation"
-          icon: "mdi:vector-polygon"
-        - name: "Image Classification"
-          icon: "mdi:image-filter"
-    - name: "DevOps & Infrastructure"
+    - name: "DevOps"
       icon: "mdi:server"
       tooltip:
-        - name: "Linux"
+        - name: "Linux Server"
           icon: "cib:linux"
         - name: "Docker"
           icon: "mdi:docker"
-        - name: Homelab
+        - name: "Network"
           icon: "uil:server-network"
     - name: "Web Development"
       icon: "hugeicons:web-design-02"
@@ -45,11 +69,20 @@
 - category: "Interactive Media"
   icon: "ph:hand-tap-fill"
   skills:
-    - name: "Interactive Media Tools"
-      icon: "ri:video-on-ai-fill"
+    # - name: "Interactive Media Tools"
+    #   icon: "ri:video-on-ai-fill"
+    #   tooltip:
+    #     - name: "TouchDesigner"
+    #       image: "assets/images/icons/touchdesigner.png"
+    - name: "Media Installations"
+      icon: "mdi:projector"
       tooltip:
-        - name: "TouchDesigner"
-          image: "assets/images/icons/touchdesigner.png"
+        - name: "Interactive Media"
+          icon: "mdi:gesture-tap"
+        - name: "Immersive Environments"
+          icon: "fluent:cube-28-regular"
+        - name: "Projection Mapping"
+          icon: "mdi:projector"
     - name: "Lighting"
       icon: "majesticons:lightbulb-shine"
       tooltip:
@@ -59,23 +92,10 @@
           icon: "mdi:led-strip-variant"
         - name: "Event Lighting"
           icon: "mdi:spotlight"
-        - name: "Smart Home Integration"
-          icon: "mdi:home-lightbulb"
-    - name: "Media Installations"
-      icon: "mdi:projector"
-      tooltip:
-        - name: "Immersive Environments"
-          icon: "fluent:cube-28-regular"
-        - name: "User Interaction"
-          icon: "mdi:gesture-tap"
-        - name: "Projection Mapping"
-          icon: "mdi:projector"
-        - name: "Sensor Integration"
-          icon: "mdi:motion-sensor"
-        - name: "Camera Systems"
-          icon: "mdi:camera"
+        # - name: "Smart Home Integration"
+        #   icon: "mdi:home-lightbulb"
 
-- category: "Electronics"
+- category: "Hadware"
   icon: "ph:circuitry-fill"
   skills:
     - name: "Embedded Systems"
@@ -90,21 +110,19 @@
     - name: "Electrical Installation"
       icon: "ic:twotone-electrical-services"
       tooltip:
-        - name: "Electrical Wiring"
+        - name: "230V Wiring"
           icon: "mdi:power-plug"
-        - name: "Lighting Systems"
+        - name: "Lighting and LED Systems"
           icon: "mdi:lightbulb-on"
-        - name: "Circuit Design & Protection"
-          icon: "mdi:fuse"
+        # - name: "Circuit Prototyping"
+        #   icon: ""
     - name: "IoT & Automation"
       icon: "mdi:home-automation"
       tooltip:
-        - name: "Home Automation"
+        - name: "Home Assistant"
           icon: "simple-icons:homeassistant"
         - name: "KNX"
           icon: "cbi:knx"
-        - name: "DALI"
-          icon: "mdi:lightbulb-auto"
         - name: "MQTT"
           icon: "simple-icons:mqtt"
 
