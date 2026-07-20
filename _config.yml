@@ -33,14 +33,10 @@ plugins:
   - jekyll-feed
   - jekyll-target-blank
   - jekyll-date-localization
-  - jekyll-polyglot
 
-# Polyglot Configuration for Multi-Language Support
+# Custom language configuration (without jekyll-polyglot)
 languages: ["en", "de"]
 default_language: en
-exclude_from_localization: [assets, _sass, .sass-cache, .jekyll-cache, vendor]
-parallel_localization: false
-lang_root: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -68,5 +64,5 @@ collections_dir: 'collections'
 collections:
   projects:
     output: true
-    permalink: /:lang/project/:slug
+    permalink: /project/:slug
     

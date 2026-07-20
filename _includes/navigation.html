@@ -1,5 +1,5 @@
 <nav>
-    {% for item in site.data[site.language].navigation %}
+    {% for item in site.data[page.lang | default: site.default_language].navigation %}
       <a  href="{{ item.link }}"
           class="link anim-underline"
           >

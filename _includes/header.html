@@ -1,55 +1,55 @@
 <div id="particles-js">
     <div class="header">
-      {% if site.data[site.language].info.avatar_url %}
+      {% if site.data[page.lang | default: site.default_language].info.avatar_url %}
       <div class="header-avatar-wrapper">
         <div class="header-avatar">
-          <img loading="lazy" src="{{ site.data[site.language].info.avatar_url }}" alt="{{ site.data[site.language].info.real_name }}">
+          <img loading="lazy" src="{{ site.data[page.lang | default: site.default_language].info.avatar_url }}" alt="{{ site.data[page.lang | default: site.default_language].info.real_name }}">
         </div>
       </div>
       {% endif %}
 
       <div class="header-content-wrapper">
         <div class="header-title">
-          <span class="site-title">{{ site.data[site.language].info.real_name_forename }} <span class="site-title-highlight">{{ site.data[site.language].info.real_name_lastname }}</span></span>
-          <span class="site-description">{{ site.data[site.language].info.job_title | newline_to_br }}</span>
+          <span class="site-title">{{ site.data[page.lang | default: site.default_language].info.real_name_forename }} <span class="site-title-highlight">{{ site.data[page.lang | default: site.default_language].info.real_name_lastname }}</span></span>
+          <span class="site-description">{{ site.data[page.lang | default: site.default_language].info.job_title | newline_to_br }}</span>
         </div>
         <div class="header-separator"></div>
         <div class="header-icons">
-          {% if site.data[site.language].info.linkedin_url %}
+          {% if site.data[page.lang | default: site.default_language].info.linkedin_url %}
           <div class="header-icon-wrapper">
-            <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data[site.language].info.linkedin_url }}">
+            <a aria-label="My LinkedIn Profile" target="_blank" href="{{ site.data[page.lang | default: site.default_language].info.linkedin_url }}">
               <iconify-icon icon="mdi:linkedin"></iconify-icon>
               <p class="">LinkedIn</p>
             </a>
           </div>
           {% endif %}
-          {% if site.data[site.language].info.xing_url %}
+          {% if site.data[page.lang | default: site.default_language].info.xing_url %}
           <div class="header-icon-wrapper">
-            <a aria-label="My XING Profile" target="_blank" href="{{ site.data[site.language].info.xing_url }}">
+            <a aria-label="My XING Profile" target="_blank" href="{{ site.data[page.lang | default: site.default_language].info.xing_url }}">
               <iconify-icon icon="mdi:xing"></iconify-icon>
               <p class="">XING</p>
             </a>
           </div>
           {% endif %}
-          {% if site.data[site.language].info.fiverr_url %}
+          {% if site.data[page.lang | default: site.default_language].info.fiverr_url %}
           <div class="header-icon-wrapper">
-            <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data[site.language].info.fiverr_url }}" >
+            <a aria-label = "My Fiverr Profile" target = "_blank" href = "{{ site.data[page.lang | default: site.default_language].info.fiverr_url }}" >
               <iconify-icon icon="jam:fiverr"></iconify-icon>
               <p class="">Fiverr</p>
             </a>
           </div>
           {% endif %}
-          {% if site.data[site.language].info.github_url %}
+          {% if site.data[page.lang | default: site.default_language].info.github_url %}
           <div class="header-icon-wrapper">
-            <a aria-label="My Github Profile" target="_blank" href="{{ site.data[site.language].info.github_url }}">
+            <a aria-label="My Github Profile" target="_blank" href="{{ site.data[page.lang | default: site.default_language].info.github_url }}">
               <iconify-icon icon="mdi:github"></iconify-icon>
               <p class="">GitHub</p>
             </a>
           </div>
           {% endif %}
-          {% if site.data[site.language].info.email %}
+          {% if site.data[page.lang | default: site.default_language].info.email %}
           <div class="header-icon-wrapper">
-            <a aria-label="Send Email" href="mailto:{{ site.data[site.language].info.email }}" target="_blank">
+            <a aria-label="Send Email" href="mailto:{{ site.data[page.lang | default: site.default_language].info.email }}" target="_blank">
               <iconify-icon icon="ic:round-email"></iconify-icon>
               <p class="">E-Mail</p>
             </a>
@@ -63,7 +63,7 @@
       <!-- <div class="navigation-links">
         {% include navigation.html %}
       </div> -->
-      <a class="down" href="#{{ site.data[site.language].info.scrollToSection }}" data-scroll>
+      <a class="down" href="#{{ site.data[page.lang | default: site.default_language].info.scrollToSection }}" data-scroll>
         <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon>
       </a>
     </div>

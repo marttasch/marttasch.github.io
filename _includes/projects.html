@@ -1,13 +1,13 @@
-{% if site.data[site.language].info.projects_enabled %}
+{% if site.data[page.lang | default: site.default_language].info.projects_enabled %}
 <section id="projects" class="projects">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>{% if site.language == "de" %}Meine Projekte{% else %}My Projects{% endif %}</h2>
+                <h2>{% if page.lang == "de" %}Meine Projekte{% else %}My Projects{% endif %}</h2>
                 <div id="projectWrapper">
                     {% assign c = "c-project-card" %}
                     {% for project in site.projects reversed %}
-                    {% if project.language == site.language or project.language == nil %}
+                    {% if project.language == page.lang or project.language == nil %}
                     <article class="{{c}} col col-4 col-d-6 col-t-12">
                         <div class="{{c}}__content">
                           <a href="{{ project.url }}" class="{{c}}__image">

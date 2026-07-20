@@ -1,11 +1,11 @@
-{% if site.data[site.language].info.contact_enabled %}
+{% if site.data[page.lang | default: site.default_language].info.contact_enabled %}
 <section id="contact" class="contact">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>{% if site.language == "de" %}Kontaktiere mich{% else %}Contact Me{% endif %}</h2>
+                <h2>{% if page.lang == "de" %}Kontaktiere mich{% else %}Contact Me{% endif %}</h2>
                 <p>
-                    {% if site.language == "de" %}
+                    {% if page.lang == "de" %}
                         Du kannst mich per E-Mail oder LinkedIn kontaktieren. Ich werde versuchen, so schnell wie möglich zu antworten.
                     {% else %}
                         You can contact me via email or LinkedIn. I will try to answer as soon as possible.
