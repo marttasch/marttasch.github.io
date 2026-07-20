@@ -1,3 +1,6 @@
 <footer class="footer">
-    <p>&copy; {{ site.data.info.real_name }}, {{ 'now' | date: "%Y" }}</p>
+    <div class="footer-content">
+      <p>&copy; {{ site.data[site.language].info.real_name }}, {{ 'now' | date: "%Y" }}</p>
+      {% include language-switcher.html %}
+    </div>
   </footer>

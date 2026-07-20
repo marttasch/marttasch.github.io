@@ -2,6 +2,7 @@
 date: 2023-02-10
 title: Paper Synthi
 subtitle: Playing synthesizers with game pieces on paper
+language: en
 image:
   path: /assets/images/projects/paperSynthi/paperSynthi_2.png
 gallery:

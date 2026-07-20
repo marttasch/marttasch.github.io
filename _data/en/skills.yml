@@ -1,0 +1,114 @@
+- category: "AI & Machine Learning"
+  icon: streamline-flex:ai-chip-robot-remix
+  skills:
+    - name: "Computer Vision"
+      icon: "hugeicons:vision"
+      tooltip:
+        - name: "Object Detection"
+          icon: mdi:cube-scan
+        - name: "Image Classification"
+          icon: "mdi:image-filter"
+        - name: "Image Segmentation"
+          icon: "mdi:vector-polygon"
+    - name: "Generative AI"
+      icon: lucide:sparkles
+      tooltip:
+        - name: "Dataset generation"
+          icon: mdi:database
+        - name: Fine-Tuning / Training
+          icon: fluent:brain-circuit-20-filled
+        - name: "Large Language Models"
+          icon: lucide:bot-message-square
+        - name: "Stable Diffusion"
+          icon: mdi:image-filter
+    - name: "Tools"
+      icon: tabler:tools
+      tooltip:
+        - name: "PyTorch"
+          icon: "simple-icons:pytorch"
+        - name: "OpenCV"
+          icon: "simple-icons:opencv"
+    
+- category: "Software & Infrastructure"
+  icon: material-symbols:terminal-rounded
+  skills:
+    - name: "Development"
+      icon: "ph:code-bold"
+      tooltip:
+        - name: "Python"
+          icon: "mdi:language-python"
+        - name: "JavaScript"
+          icon: "mdi:language-javascript"
+    - name: "DevOps"
+      icon: "mdi:server"
+      tooltip:
+        - name: "Linux Server"
+          icon: "cib:linux"
+        - name: "Docker"
+          icon: "mdi:docker"
+        - name: "Network"
+          icon: "uil:server-network"
+    - name: "Web Development"
+      icon: "hugeicons:web-design-02"
+      tooltip:
+        - name: "HTML"
+          icon: "mdi:language-html5"
+        - name: "CSS"
+          icon: "mdi:language-css3"
+        - name: "Jekyll"
+          icon: "simple-icons:jekyll"
+        - name: "Grav"
+          icon: "simple-icons:grav"
+        - name: "React Native"
+          icon: "simple-icons:react"
+
+- category: "Interactive Media"
+  icon: "ph:hand-tap-fill"
+  skills:
+    - name: "Media Installations"
+      icon: "mdi:projector"
+      tooltip:
+        - name: "Interactive Media"
+          icon: "mdi:gesture-tap"
+        - name: "Immersive Environments"
+          icon: "fluent:cube-28-regular"
+        - name: "Projection Mapping"
+          icon: "mdi:projector"
+    - name: "Lighting"
+      icon: "majesticons:lightbulb-shine"
+      tooltip:
+        - name: "Lighting Design"
+          icon: "mdi:lightbulb-spot"
+        - name: "LED Installations"
+          icon: "mdi:led-strip-variant"
+        - name: "Event Lighting"
+          icon: "mdi:spotlight"
+
+- category: "Hardware"
+  icon: "ph:circuitry-fill"
+  skills:
+    - name: "Embedded Systems"
+      icon: "mdi:raspberry-pi"
+      tooltip:
+        - name: "Raspberry Pi"
+          icon: "cib:raspberry-pi"
+        - name: "ESP32"
+          icon: "simple-icons:espressif"
+        - name: "Arduino"
+          icon: "simple-icons:arduino"
+    - name: "Electrical Installation"
+      icon: "ic:twotone-electrical-services"
+      tooltip:
+        - name: "230V Wiring"
+          icon: "mdi:power-plug"
+        - name: "Lighting and LED Systems"
+          icon: "mdi:lightbulb-on"
+    - name: "IoT & Automation"
+      icon: "mdi:home-automation"
+      tooltip:
+        - name: "Home Assistant"
+          icon: "simple-icons:homeassistant"
+        - name: "KNX"
+          icon: "cbi:knx"
+        - name: "MQTT"
+          icon: "simple-icons:mqtt"

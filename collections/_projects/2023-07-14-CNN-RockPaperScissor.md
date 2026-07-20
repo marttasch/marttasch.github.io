@@ -2,6 +2,7 @@
 date: 2023-07-14
 title: CNN Rock Paper Scissor
 subtitle: Playing Rock Paper Scissors with a Convolutional Neural Network
+language: en
 image:
     path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png
 gallery:

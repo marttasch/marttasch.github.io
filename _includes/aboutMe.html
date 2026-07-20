@@ -1,11 +1,11 @@
-{% if site.data.info.aboutMe_enabled %}
+{% if site.data[site.language].info.aboutMe_enabled %}
 <section id="about" class="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12" id="aboutMe-container">
-                <h2>About Me</h2>
+                <h2>{% if site.language == "de" %}Über mich{% else %}About Me{% endif %}</h2>
                 <p>
-                    {{ site.data.info.aboutMe_text  }}
+                    {{ site.data[site.language].info.aboutMe_text  }}
                 </p>
             </div>
         </div>

@@ -1,0 +1,6 @@
+- name: Über mich
+  link: "#about"
+- name: Fähigkeiten
+  link: "#skills"
+- name: Projekte
+  link: "#projects"

@@ -1,0 +1,12 @@
+<div class="language-switcher">
+  {% if site.language == "en" %}
+    <span class="current-lang">EN</span>
+    <a href="/de{{ page.url | remove: '/en' }}" class="lang-link">DE</a>
+  {% elsif site.language == "de" %}
+    <a href="/en{{ page.url | remove: '/de' }}" class="lang-link">EN</a>
+    <span class="current-lang">DE</span>
+  {% else %}
+    <span class="current-lang">EN</span>
+    <a href="/de{{ page.url }}" class="lang-link">DE</a>
+  {% endif %}
+</div>

@@ -1,0 +1,33 @@
+# Header Section
+real_name: Martin Tasch
+real_name_forename: Martin
+real_name_lastname: Tasch
+
+job_title: |
+  B.Sc Media Technology
+
+avatar_url: assets/images/avatar.png
+
+github_username:  marttasch
+website_url: https://martintasch.de
+linkedin_url: https://www.linkedin.com/in/martin-tasch-945b24227/
+xing_url: https://www.xing.com/profile/Martin_Tasch2/
+github_url: https://github.com/marttasch
+
+scrollToSection: about
+
+# about me
+aboutMe_enabled: true
+aboutMe_text: >
+  I'm a technologist fascinated by how AI can solve real problems and unlock new possibilities. My focus is computer vision and generative models, areas I've explored through my bachelor thesis.
+  My background in interactive media and embedded systems taught me practical, interdisciplinary, and outcomes-focused thinking. I enjoy tinkering with innovative tech to solve real-world challenges, especially when blending technical depth with creative applications.
+  I'm committed to open-source software because I believe the best technology emerges from transparent, collaborative approaches.
+
+# skills
+skills_enabled: true
+
+# projects
+projects_enabled: true
+
+# contact
+contact_enabled: false
