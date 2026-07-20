@@ -7,9 +7,15 @@ layout: default
 <section id="project-page">
     <div class="projectpage-header">
         {% assign lang = page.lang | default: site.default_language %}
-        <a href="{% if page.url contains 'projects' %}#projects{% else %}{{ site.baseurl }}/#projects{% endif %}" class="back-link anim-underline">
-            <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> {% if lang == "de" %}Zurück zu Projekten{% else %}Back to Projects{% endif %}
-          </a>
+        {% if lang == "de" %}
+            <a href="/de/#projects" class="back-link anim-underline">
+                <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Zurück zu Projekten
+            </a>
+        {% else %}
+            <a href="/en/#projects" class="back-link anim-underline">
+                <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Back to Projects
+            </a>
+        {% endif %}
               </div>
     <div class="container">
         <div class="project-header" style="background-image: url('{{ page.image.path }}')";>

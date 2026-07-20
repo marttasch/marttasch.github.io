@@ -711,6 +711,12 @@ section {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  #about p {
+    margin-left: 1em;
+    font-size: 1.1em;
+  }
+}
 #projectWrapper {
   position: relative;
   display: flex;

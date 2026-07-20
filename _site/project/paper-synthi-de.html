@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,11 @@
     <section id="project-page">
     <div class="projectpage-header">
         
-        <a href="/#projects" class="back-link anim-underline">
-            <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Back to Projects
-          </a>
+        
+            <a href="/de/#projects" class="back-link anim-underline">
+                <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Zurück zu Projekten
+            </a>
+        
               </div>
     <div class="container">
         <div class="project-header" style="background-image: url('/assets/images/projects/paperSynthi/paperSynthi_2.png')">
@@ -34,7 +36,7 @@
         <div class="project-content">
             <p>Als Teil eines Universitätsprojekts entwickelten wir einen Synthesizer, der mit Spielsteinen auf einem Blatt Papier gesteuert werden kann.</p>
 
-<p>Mit Hilfe von OpenCV und MediaPipe kann eine Webcam die Positionen der Spielsteine und Finger präzise erkennen. Die Spielsteine auf dem Papier fungieren als Steuerelemente für den Synthesizer. Benutzer können diese Steine verschieben, um verschiedene Einstellungen am Synthesizer anzupassen, wie z.B. Klangfarben oder Effekte zu ändern. Gleichzeitig können sie auch die Noten auf der virtuellen Tastatur mit ihren Zeigefingern spielen. Die erkannten Noten und Einstellungen werden via MIDI an eine Webanwendung gesendet, die die “Web Audio API” für die Sounderzeugung verwendet, so dass der Browser als Audio-visuelles Ausgabegerät für den Synthesizer dient.</p>
+<p>Mit Hilfe von OpenCV und MediaPipe kann eine Webcam die Positionen der Spielsteine und Finger präzise erkennen. Die Spielsteine auf dem Papier fungieren als Steuerelemente für den Synthesizer. Benutzer können diese Steine verschieben, um verschiedene Einstellungen am Synthesizer anzupassen z.B. für Klangfarben oder Effekte. Gleichzeitig können sie auch die Noten auf der virtuellen Tastatur mit ihren Zeigefingern spielen. Die erkannten Noten und Einstellungen werden via MIDI an eine Webanwendung gesendet, die die “Web Audio API” für die Sounderzeugung verwendet, so dass der Browser als Audio-visuelles Ausgabegerät für den Synthesizer dient.</p>
 
 <p>Dieses Projekt demonstriert eindrucksvoll das Potenzial von Computer Vision und einfacher Objekterkennung. Es zeigt, wie technologische Lösungen kreative Prozesse unterstützen können und die physische und digitale Welt auf faszinierende Weise verbinden, um innovative und interaktive Anwendungen zu schaffen.</p>
 
@@ -74,14 +76,14 @@
   
   <div class="lang-container">
     <a href="/en/project/paper-synthi-de" 
-       class="lang-option active" 
+       class="lang-option " 
        aria-label="Switch to English">
       <span class="lang-code">EN</span>
       <span class="lang-name">English</span>
     </a>
     <div class="lang-divider"></div>
     <a href="/de/project/paper-synthi-de" 
-       class="lang-option " 
+       class="lang-option active" 
        aria-label="Zu Deutsch wechseln">
       <span class="lang-code">DE</span>
       <span class="lang-name">Deutsch</span>
@@ -94,7 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .lang-container {
@@ -109,17 +111,12 @@
     transition: all 0.3s ease;
   }
 
-  .lang-container:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(221, 177, 18, 0.6);
-    box-shadow: 0 0 20px rgba(221, 177, 18, 0.2);
-  }
 
   .lang-option {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.6rem 1.2rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 40px;
     transition: all 0.3s ease;
     color: rgba(255, 255, 255, 0.6);
@@ -130,13 +127,11 @@
   }
 
   .lang-option:hover {
-    color: rgba(255, 255, 255, 0.9);
   }
 
   .lang-option.active {
     background: linear-gradient(135deg, #ddb112 0%, #f0c040 100%);
     color: #000;
-    box-shadow: 0 4px 15px rgba(221, 177, 18, 0.4);
     font-weight: 600;
   }
 
@@ -145,7 +140,7 @@
   }
 
   .lang-code {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -225,6 +220,7 @@
   .footer-copyright {
     margin: 0;
     font-size: 0.9rem;
+    text-align: center;
     color: rgba(255, 255, 255, 0.7);
     transition: color 0.3s ease;
   }

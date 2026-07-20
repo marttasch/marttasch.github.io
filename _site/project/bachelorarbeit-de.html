@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,21 +21,23 @@
     <section id="project-page">
     <div class="projectpage-header">
         
-        <a href="/#projects" class="back-link anim-underline">
-            <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Back to Projects
-          </a>
+        
+            <a href="/de/#projects" class="back-link anim-underline">
+                <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Zurück zu Projekten
+            </a>
+        
               </div>
     <div class="container">
         <div class="project-header" style="background-image: url('/assets/images/projects/bachelorarbeit/bachelorarbeit_header.jpeg')">
             <h1 class="title">Bachelorarbeit</h1>
-            <h2 class="subtitle">Mit Stable Diffusion generierte Datensätze für die Bilderkennung von Verschmutzungen in Sanitärbereichen</h2>
+            <h2 class="subtitle">Nutzung von Stable Diffusion zur Datensatzgenerierung für die Bilderkennung von Verschmutzungen in Sanitärbereichen</h2>
             <p class="date">22. July 2024</p>
         </div>
         <div class="project-content">
             <p>In meiner Bachelorarbeit untersuche ich die Anwendung von Stable Diffusion zur Generierung von Datensätzen für die Bilderkennung, insbesondere im Sanitärsektor. Die Methodik beinhaltet die Anpassung von Stable Diffusion für diese spezifische Anwendung mittels Low Rank Adaptation (LoRA) und nutzt das Modell Realistic Vision 5.1, um fotorealistische Bilder zu erstellen. Die Arbeit demonstriert die Machbarkeit der automatisierten Datensatzerstellung mit Stable Diffusion und erreicht vielversprechende Ergebnisse mit einer Validierungsgenauigkeit von über 90% für die generierten Datensätze, bewertet durch ein trainiertes InceptionV3-Bilderkennungsmodell. Mögliche Verbesserungsbereiche wurden identifiziert, einschließlich der Notwendigkeit, die realistische Darstellung von Verschmutzungen durch einen größeren und realistischeren Trainingsdatensatz zu verbessern und das Modell weiter mittels LoRA anzupassen. Zukünftige Arbeiten sollten auch die Erstellung eines größeren, ausgewogeneren Evaluationsdatensatzes in Betracht ziehen, um aussagekräftigere Ergebnisse zu erhalten.</p>
 
 <p>Das entwickelte Framework für die automatisierte Datensatzerstellung ist auf <a href="https://github.com/marttasch/StableDiffusion_generateDataset" target="_blank" rel="noopener noreferrer">Github</a> verfügbar.
-Das vollständige Papier ist im <a href="https://reposit.haw-hamburg.de/handle/20.500.12738/16340" target="_blank" rel="noopener noreferrer">HAW Hamburg Repository</a> verfügbar.</p>
+Die vollständige Thesis ist im <a href="https://reposit.haw-hamburg.de/handle/20.500.12738/16340" target="_blank" rel="noopener noreferrer">HAW Hamburg Repository</a> verfügbar.</p>
 
 
             <div class="project-gallery">
@@ -59,14 +61,14 @@ Das vollständige Papier ist im <a href="https://reposit.haw-hamburg.de/handle/2
   
   <div class="lang-container">
     <a href="/en/project/bachelorarbeit-de" 
-       class="lang-option active" 
+       class="lang-option " 
        aria-label="Switch to English">
       <span class="lang-code">EN</span>
       <span class="lang-name">English</span>
     </a>
     <div class="lang-divider"></div>
     <a href="/de/project/bachelorarbeit-de" 
-       class="lang-option " 
+       class="lang-option active" 
        aria-label="Zu Deutsch wechseln">
       <span class="lang-code">DE</span>
       <span class="lang-name">Deutsch</span>
@@ -79,7 +81,7 @@ Das vollständige Papier ist im <a href="https://reposit.haw-hamburg.de/handle/2
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .lang-container {
@@ -94,17 +96,12 @@ Das vollständige Papier ist im <a href="https://reposit.haw-hamburg.de/handle/2
     transition: all 0.3s ease;
   }
 
-  .lang-container:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(221, 177, 18, 0.6);
-    box-shadow: 0 0 20px rgba(221, 177, 18, 0.2);
-  }
 
   .lang-option {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.6rem 1.2rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 40px;
     transition: all 0.3s ease;
     color: rgba(255, 255, 255, 0.6);
@@ -115,13 +112,11 @@ Das vollständige Papier ist im <a href="https://reposit.haw-hamburg.de/handle/2
   }
 
   .lang-option:hover {
-    color: rgba(255, 255, 255, 0.9);
   }
 
   .lang-option.active {
     background: linear-gradient(135deg, #ddb112 0%, #f0c040 100%);
     color: #000;
-    box-shadow: 0 4px 15px rgba(221, 177, 18, 0.4);
     font-weight: 600;
   }
 
@@ -130,7 +125,7 @@ Das vollständige Papier ist im <a href="https://reposit.haw-hamburg.de/handle/2
   }
 
   .lang-code {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -210,6 +205,7 @@ Das vollständige Papier ist im <a href="https://reposit.haw-hamburg.de/handle/2
   .footer-copyright {
     margin: 0;
     font-size: 0.9rem;
+    text-align: center;
     color: rgba(255, 255, 255, 0.7);
     transition: color 0.3s ease;
   }

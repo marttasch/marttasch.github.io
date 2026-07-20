@@ -3,6 +3,7 @@ date: 2023-02-10
 title: Paper Synthi
 subtitle: Synthesizer mit Spielsteinen auf Papier spielen
 language: de
+lang: de
 image:
   path: /assets/images/projects/paperSynthi/paperSynthi_2.png
 gallery:

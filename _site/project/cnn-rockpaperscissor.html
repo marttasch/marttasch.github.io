@@ -21,9 +21,11 @@
     <section id="project-page">
     <div class="projectpage-header">
         
-        <a href="/#projects" class="back-link anim-underline">
-            <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Back to Projects
-          </a>
+        
+            <a href="/en/#projects" class="back-link anim-underline">
+                <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Back to Projects
+            </a>
+        
               </div>
     <div class="container">
         <div class="project-header" style="background-image: url('/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png')">
@@ -32,11 +34,11 @@
             <p class="date">14. July 2023</p>
         </div>
         <div class="project-content">
-            <p>In the Smart Media Technology course of my media technology studies, I was significantly involved in the development of an interactive “rock, paper, scissors” game. Our group’s goal was to use a convolutional neural network (CNN) to analyze the users’ webcam images and recognize their hand gestures (scissors, rock, or paper) in order to compete against the computer.</p>
+            <p>In the Smart Media Technology course of my media technology studies, I was significantly involved in the development of an interactive “rock, paper, scissors” game. Our group’s goal was to use a convolutional neural network (CNN) to analyze the users’ webcam images and recognize their hand gestures (rock, paper, or scissor) in order to compete against the computer.</p>
 
 <p>The entire implementation was done in Python on the Google Colab platform. We created our own dataset with about 200 images for each hand gesture to train the CNN. In doing so, we refined a pre-trained ResNet50 model to suit our requirements. We used PyTorch as the framework, while Ray Tune and Tensorboard were used for training and visualizing the results.</p>
 
-<p>Our game can be played in a specially developed Jupyter notebook on Google Colab. The notebook loads the latest model from a Git repository and performs image recognition. To improve gesture recognition, the webcam image is cropped to the recognized hand using Mediapipe before the actual prediction by our CNN. The user interface was designed using IPython widgets.</p>
+<p>Our game can be played in a specially developed Jupyter notebook on Google Colab. The notebook loads the latest model from a Git repository and performs the image recognition. To improve gesture recognition, the webcam image is cropped to the recognized hand using Mediapipe before the actual prediction is performed by our CNN. The user interface was designed using IPython widgets.</p>
 
 <p>The project gave me practical experience in machine learning and artificial intelligence for interactive applications. It provided interesting insights into the challenges and possibilities of image recognition.</p>
 
@@ -100,7 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .lang-container {
@@ -115,17 +117,12 @@
     transition: all 0.3s ease;
   }
 
-  .lang-container:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(221, 177, 18, 0.6);
-    box-shadow: 0 0 20px rgba(221, 177, 18, 0.2);
-  }
 
   .lang-option {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.6rem 1.2rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 40px;
     transition: all 0.3s ease;
     color: rgba(255, 255, 255, 0.6);
@@ -136,13 +133,11 @@
   }
 
   .lang-option:hover {
-    color: rgba(255, 255, 255, 0.9);
   }
 
   .lang-option.active {
     background: linear-gradient(135deg, #ddb112 0%, #f0c040 100%);
     color: #000;
-    box-shadow: 0 4px 15px rgba(221, 177, 18, 0.4);
     font-weight: 600;
   }
 
@@ -151,7 +146,7 @@
   }
 
   .lang-code {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -231,6 +226,7 @@
   .footer-copyright {
     margin: 0;
     font-size: 0.9rem;
+    text-align: center;
     color: rgba(255, 255, 255, 0.7);
     transition: color 0.3s ease;
   }

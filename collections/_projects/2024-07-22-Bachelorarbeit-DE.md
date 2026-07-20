@@ -1,8 +1,9 @@
 ---
 date: 2024-07-22
-title: Bachelorthesis
+title: Bachelorarbeit
 subtitle: Nutzung von Stable Diffusion zur Datensatzgenerierung für die Bilderkennung von Verschmutzungen in Sanitärbereichen
 language: de
+lang: de
 image:
     path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header.jpeg
 

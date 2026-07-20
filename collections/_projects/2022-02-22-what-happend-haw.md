@@ -3,6 +3,7 @@ date: 2022-02-22
 title: What happend, HAW?
 subtitle: Media Project at HAW Hamburg
 language: en
+lang: en
 image:
   path: /assets/images/projects/whatHappendHAW/whatHappendHAW_0.jpg
 gallery:

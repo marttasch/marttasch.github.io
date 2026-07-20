@@ -3,6 +3,7 @@ date: 2023-07-14
 title: CNN Stein Papier Schere
 subtitle: Stein-Papier-Schere spielen mit einem Convolutional Neural Network
 language: de
+lang: de
 image:
     path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png
 gallery:
