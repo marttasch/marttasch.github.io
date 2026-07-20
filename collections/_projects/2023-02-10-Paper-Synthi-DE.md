@@ -4,6 +4,7 @@ title: Paper Synthi
 subtitle: Synthesizer mit Spielsteinen auf Papier spielen
 language: de
 lang: de
+permalink: /de/project/papersynthi/
 image:
   path: /assets/images/projects/paperSynthi/paperSynthi_2.png
 gallery:

@@ -4,6 +4,7 @@ title: What happend, HAW?
 subtitle: Media Project at HAW Hamburg
 language: en
 lang: en
+permalink: /en/project/whathappendhaw/
 image:
   path: /assets/images/projects/whatHappendHAW/whatHappendHAW_0.jpg
 gallery:

@@ -4,6 +4,7 @@ title: CNN Rock Paper Scissor
 subtitle: Playing Rock Paper Scissors with a Convolutional Neural Network
 language: en
 lang: en
+permalink: /en/project/cnn-rockpaperscissor/
 image:
     path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png
 gallery:

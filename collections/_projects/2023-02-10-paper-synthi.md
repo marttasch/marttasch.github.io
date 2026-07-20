@@ -4,6 +4,7 @@ title: Paper Synthi
 subtitle: Playing synthesizers with game pieces on paper
 language: en
 lang: en
+permalink: /en/project/papersynthi/
 image:
   path: /assets/images/projects/paperSynthi/paperSynthi_2.png
 gallery:

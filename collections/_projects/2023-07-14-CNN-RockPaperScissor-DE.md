@@ -4,6 +4,7 @@ title: CNN Stein Papier Schere
 subtitle: Stein-Papier-Schere spielen mit einem Convolutional Neural Network
 language: de
 lang: de
+permalink: /de/project/cnn-rockpaperscissor/
 image:
     path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png
 gallery:

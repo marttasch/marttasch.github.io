@@ -4,6 +4,7 @@ title: Bachelorarbeit
 subtitle: Nutzung von Stable Diffusion zur Datensatzgenerierung für die Bilderkennung von Verschmutzungen in Sanitärbereichen
 language: de
 lang: de
+permalink: /de/project/bachelorthesis/
 image:
     path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header.jpeg
 
