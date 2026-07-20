@@ -18,9 +18,10 @@ layout: default
 </style>
 
 <div class="container">
+  {% assign lang = page.lang | default: site.default_language %}
   <h1>404</h1>
 
-  {% if page.lang == "de" %}
+  {% if lang == "de" %}
     <p><strong>Seite nicht gefunden :(</strong></p>
     <p>Die angeforderte Seite konnte nicht gefunden werden.</p>
   {% else %}

@@ -6,8 +6,9 @@ layout: default
 
 <section id="project-page">
     <div class="projectpage-header">
+        {% assign lang = page.lang | default: site.default_language %}
         <a href="{% if page.url contains 'projects' %}#projects{% else %}{{ site.baseurl }}/#projects{% endif %}" class="back-link anim-underline">
-            <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> {% if page.lang == "de" %}Zurück zu Projekten{% else %}Back to Projects{% endif %}
+            <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> {% if lang == "de" %}Zurück zu Projekten{% else %}Back to Projects{% endif %}
           </a>
               </div>
     <div class="container">

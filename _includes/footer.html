@@ -1,6 +1,7 @@
 <footer class="footer">
+    {% assign lang = page.lang | default: site.default_language %}
     <div class="footer-content">
-      <p>&copy; {{ site.data[page.lang | default: site.default_language].info.real_name }}, {{ 'now' | date: "%Y" }}</p>
+      <p>&copy; {{ site.data[lang].info.real_name }}, {{ 'now' | date: "%Y" }}</p>
       {% include language-switcher.html %}
     </div>
   </footer>
