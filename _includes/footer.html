@@ -1,7 +1,66 @@
 <footer class="footer">
     {% assign lang = page.lang | default: site.default_language %}
     <div class="footer-content">
-      <p>&copy; {{ site.data[lang].info.real_name }}, {{ 'now' | date: "%Y" }}</p>
-      {% include language-switcher.html %}
+      <div class="footer-section">
+        <p class="footer-copyright">&copy; {{ site.data[lang].info.real_name }}, {{ 'now' | date: "%Y" }}</p>
+      </div>
+      <div class="footer-section">
+        {% include language-switcher.html %}
+      </div>
     </div>
   </footer>
+
+<style>
+  .footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(221, 177, 18, 0.2);
+    background: rgba(6, 6, 71, 0.4);
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-copyright {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+  }
+
+  .footer-copyright:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-section {
+      flex: 1;
+    }
+
+    .footer-section:first-child {
+      text-align: left;
+    }
+
+    .footer-section:last-child {
+      text-align: right;
+    }
+  }
+</style>
