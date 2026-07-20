@@ -10,7 +10,7 @@
                     {% for project in site.projects reversed %}
                     {% if project.language == lang or project.language == nil %}
                     <article class="{{c}} col col-4 col-d-6 col-t-12">
-                        <div class="{{c}}__content">
+                         <div class="{{c}}__content">
                           <a href="{{ project.url }}" class="{{c}}__image">
                             {% if project.image.path %}
                               <img loading="lazy" src="{{ project.image.path }}" alt="{{ project.title }}">
