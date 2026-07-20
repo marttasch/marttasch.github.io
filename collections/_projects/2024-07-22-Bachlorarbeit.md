@@ -4,6 +4,7 @@ title: Bachelor Thesis
 subtitle: Using Stable Diffusion to generate datasets for image recognition of contamination in sanitary areas
 language: en
 lang: en
+permalink: /en/project/bachelorthesis/
 image:
     path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header.jpeg
 # gallery:
