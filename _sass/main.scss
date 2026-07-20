@@ -403,6 +403,13 @@ section {
     border-radius: 5px;
   }
 }
+@media screen and (max-width: $mobile) {
+    #about p {
+        margin-left: 1em;
+        font-size: 1.1em;
+    }  
+}
+
   
 
 // ----- Skills ----- //
