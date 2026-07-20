@@ -38,7 +38,7 @@ plugins:
 # Polyglot Configuration for Multi-Language Support
 languages: ["en", "de"]
 default_language: en
-exclude_from_localization: ["assets", "js", "css", "images"]
+exclude_from_localization: [assets, _sass, .sass-cache, .jekyll-cache, vendor]
 parallel_localization: false
 lang_root: true
 
@@ -68,5 +68,5 @@ collections_dir: 'collections'
 collections:
   projects:
     output: true
-    permalink: /project/:slug
+    permalink: /:lang/project/:slug
     
