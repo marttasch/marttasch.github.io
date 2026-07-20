@@ -16,7 +16,7 @@ layout: projects
 ---
 
 
-As part of my media technology studies, I had the opportunity to participate in a media project in a virtual production studio in Hamburg. We produced a live-on-tape show in which a live music act performed five songs in five different worlds. The worlds were created using Unreal Engine and an 18-meter-long LED wall. The show was recorded in the virtual studio and later broadcast on Tide TV without post-production.
+As part of my media technology studies, I had the opportunity to participate in a media project in a virtual production studio in Hamburg. We produced a live-on-tape show in which a live music act performed five songs in five different worlds. The worlds were created using Unreal Engine and displayed on an 18-meter-long LED wall. The show was recorded in the virtual production studio and later broadcasted on Tide TV without post-production.
 
 My responsibility was to create the content for the LED wall in Unreal Engine. In addition, I set up the equipment on site and operated the engine during the show. To do this, I developed a logic that made it possible to load the 5 different worlds into an Unreal Engine project and switch between them during the live show with minimal latency.
 
