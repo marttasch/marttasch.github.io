@@ -1,11 +1,16 @@
 {% assign lang = page.lang | default: site.default_language %}
 {% if site.data[lang].info.skills_enabled %}
 <!-- Masonry -->
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<!-- Tippy.js -->
-<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
+<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+<script src="/assets/js/masonry.pkgd.min.js"></script>
+
+<!-- Tooltips / tippy.js -->
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/assets/js/popper.min.js"></script>
+<!-- <script src="https://unpkg.com/tippy.js@6"></script> -->
+<script src="/assets/js/tippy-bundle.umd.min.js"></script>
+<!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" /> -->
+<link rel="stylesheet" href="/assets/css/tippy.css" />
 
 <section id="skills" class="skills">
     <div class="container">
