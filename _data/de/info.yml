@@ -19,10 +19,14 @@ scrollToSection: about
 
 # about me
 aboutMe_enabled: true
+#aboutMe_text: >
+#  Als Technologie-Enthusiast bin ich fasziniert davon, wie künstliche Intelligenz echte Probleme lösen und neue Möglichkeiten erschließen kann. Mein Schwerpunkt liegt auf Computer Vision und generativen Modellen – Bereiche, die ich intensiv in meiner Bachelorarbeit erforscht habe.
+#  Mein Hintergrund in interaktiven Medien und eingebetteten Systemen hat mir praktisches, interdisziplinäres und lösungsorientiertes Denken beigebracht. Ich liebe es, mit innovativer Technologie zu experimentieren und praktische Herausforderungen zu lösen – besonders dann, wenn ich technische Tiefe mit kreativen Anwendungen verbinde.
+#  Ich bin von Open-Source-Software überzeugt, weil ich glaube, dass die beste Technologie aus transparenten und kollaborativen Ansätzen entsteht.
 aboutMe_text: >
-  Als Technologie-Enthusiast bin ich fasziniert davon, wie künstliche Intelligenz echte Probleme lösen und neue Möglichkeiten erschließen kann. Mein Schwerpunkt liegt auf Computer Vision und generativen Modellen – Bereiche, die ich intensiv in meiner Bachelorarbeit erforscht habe.
-  Mein Hintergrund in interaktiven Medien und eingebetteten Systemen hat mir praktisches, interdisziplinäres und lösungsorientiertes Denken beigebracht. Ich liebe es, mit innovativer Technologie zu experimentieren und praktische Herausforderungen zu lösen – besonders dann, wenn ich technische Tiefe mit kreativen Anwendungen verbinde.
-  Ich bin von Open-Source-Software überzeugt, weil ich glaube, dass die beste Technologie aus transparenten und kollaborativen Ansätzen entsteht.
+  Ich verbinde technische Tiefe mit kreativen Anwendungen, getrieben von der Überzeugung, dass KI nicht nur innovativ, sondern auch verantwortungsvoll und zielgerichtet eingesetzt werden muss.
+  Mein Hintergrund in interaktiven Medien und eingebetteten Systemen hat mir praktisches, interdisziplinäres und lösungsorientiertes Denken beigebracht. Als B.Sc. Medientechnik mit Schwerpunkt auf generativer KI und Computer Vision setze ich mich für nachhaltige, zukunftsfähige Lösungen ein.
+  Dabei sind Open-Source-Prinzipien und digitale Souveränität für mich zentral: Transparenz, Kollaboration und die Kontrolle über eigene Daten schaffen erst die Grundlage für Technologie, die echten gesellschaftlichen Mehrwert schafft.
 
 # skills
 skills_enabled: true
