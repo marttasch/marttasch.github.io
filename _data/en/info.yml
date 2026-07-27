@@ -6,7 +6,8 @@ real_name_lastname: Tasch
 job_title: |
   B.Sc Media Technology
 
-avatar_url: /assets/images/avatar.png
+#avatar_url: /assets/images/avatar.png
+avatar_url: /assets/images/martin_avatar.jpg
 
 github_username:  marttasch
 website_url: https://martintasch.de
