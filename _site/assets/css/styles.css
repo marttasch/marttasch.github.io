@@ -699,6 +699,7 @@ section {
   font-size: 1.3em;
   margin-left: 2em;
   position: relative;
+  text-align: justify;
 }
 #about p::before {
   content: "";
