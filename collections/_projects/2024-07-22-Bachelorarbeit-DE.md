@@ -6,7 +6,7 @@ language: de
 lang: de
 permalink: /de/project/bachelorthesis/
 image:
-    path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header.jpeg
+    path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header_komp.jpg
 
 layout: projects
 ---

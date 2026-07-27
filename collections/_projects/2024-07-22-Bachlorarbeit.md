@@ -6,7 +6,7 @@ language: en
 lang: en
 permalink: /en/project/bachelorthesis/
 image:
-    path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header.jpeg
+    path: /assets/images/projects/bachelorarbeit/bachelorarbeit_header_komp.jpg
 # gallery:
 #     - path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_02.png
 #     - path: /assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_03.png

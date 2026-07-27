@@ -6,13 +6,13 @@ language: de
 lang: de
 permalink: /de/project/whathappendhaw/
 image:
-  path: /assets/images/projects/whatHappendHAW/whatHappendHAW_0.jpg
+  path: /assets/images/projects/whatHappendHAW/whatHappendHAW_0_komp.jpg
 gallery:
-  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_0.jpg
-  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_1.jpg
-  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_2.jpg
-  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_3.jpg
-  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_4.jpg
+  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_0_komp.jpg
+  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_1_komp.jpg
+  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_2_komp.jpg
+  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_3_komp.jpg
+  - path: /assets/images/projects/whatHappendHAW/whatHappendHAW_4_komp.jpg
 
 layout: projects
 ---
