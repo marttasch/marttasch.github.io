@@ -19,11 +19,15 @@
           icon: fluent:brain-circuit-20-filled
         - name: "Large Language Models"
           icon: lucide:bot-message-square
+        - name: "Prompt Engineering"
+          icon: "mdi:text-box-edit"
         - name: "Stable Diffusion"
           icon: mdi:image-filter
     - name: "Tools"
       icon: tabler:tools
       tooltip:
+        - name: "openCode"
+          icon: "simple-icons:opencode"
         - name: "PyTorch"
           icon: "simple-icons:pytorch"
         - name: "OpenCV"
