@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="CNN Rock Paper Scissor" content="">
+    <title>CNN Rock Paper Scissor</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Iconify Icon -->
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
+    <script src="/assets/js/iconify-icon.min.js"></script>
+
+    <!-- Plausible Analytics-->
+    <script defer data-domain="martintasch.de" src="https://plausible.taschcloud.de/js/script.hash.outbound-links.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+    
+  </head>
+  <body>
+    <section id="project-page">
+    <div class="projectpage-header">
+        
+        
+            <a href="/en/#projects" class="back-link anim-underline">
+                <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Back to Projects
+            </a>
+        
+              </div>
+    <div class="container">
+        <div class="project-header" style="background-image: url('/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png')">
+            <h1 class="title">CNN Rock Paper Scissor</h1>
+            <h2 class="subtitle">Playing Rock Paper Scissors with a Convolutional Neural Network</h2>
+            <p class="date">14. July 2023</p>
+        </div>
+        <div class="project-content">
+            <p>In the Smart Media Technology course of my media technology studies, I was significantly involved in the development of an interactive “rock, paper, scissors” game. Our group’s goal was to use a convolutional neural network (CNN) to analyze the users’ webcam images and recognize their hand gestures (rock, paper, or scissor) in order to compete against the computer.</p>
+
+<p>The entire implementation was done in Python on the Google Colab platform. We created our own dataset with about 200 images for each hand gesture to train the CNN. In doing so, we refined a pre-trained ResNet50 model to suit our requirements. We used PyTorch as the framework, while Ray Tune and Tensorboard were used for training and visualizing the results.</p>
+
+<p>Our game can be played in a specially developed Jupyter notebook on Google Colab. The notebook loads the latest model from a Git repository and performs the image recognition. To improve gesture recognition, the webcam image is cropped to the recognized hand using Mediapipe before the actual prediction is performed by our CNN. The user interface was designed using IPython widgets.</p>
+
+<p>The project gave me practical experience in machine learning and artificial intelligence for interactive applications. It provided interesting insights into the challenges and possibilities of image recognition.</p>
+
+<p><a href="https://colab.research.google.com/drive/1YFxfhp5Srf8tqa0avC0Oa3wqk1ovVd8V?usp=sharing" target="_blank" rel="noopener noreferrer">Link to the game notebook for playing</a></p>
+
+
+            <div class="project-gallery">
+                
+                <a href="/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_02.png">
+                    <div class="project-gallery__item" style="background-image: url('/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_02.png');"></div>
+                </a>
+                
+                <a href="/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_03.png">
+                    <div class="project-gallery__item" style="background-image: url('/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_03.png');"></div>
+                </a>
+                
+                <a href="/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png">
+                    <div class="project-gallery__item" style="background-image: url('/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_04.png');"></div>
+                </a>
+                
+                <a href="/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_05.png">
+                    <div class="project-gallery__item" style="background-image: url('/assets/images/projects/cnnRockPaperScissor/cnnRockPaperScissor_05.png');"></div>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script type="text/javascript" src="/assets/js/lightbox.js"></script>
+    <link rel="stylesheet" href="/assets/css/lightbox.css">  
+  </body>
+  <footer class="footer">
+    
+    <div class="footer-content">
+      <div class="footer-section">
+        <p class="footer-copyright">&copy; Martin Tasch, 2026</p>
+      </div>
+      <div class="footer-section">
+        <div class="language-switcher">
+  
+  
+  <div class="lang-container">
+    <a href="/en/project/cnn-rockpaperscissor/"
+       class="lang-option active"
+       aria-label="Switch to English">
+      <span class="lang-code">EN</span>
+      <span class="lang-name">English</span>
+    </a>
+    <div class="lang-divider"></div>
+    <a href="/de/project/cnn-rockpaperscissor/"
+       class="lang-option "
+       aria-label="Zu Deutsch wechseln">
+      <span class="lang-code">DE</span>
+      <span class="lang-name">Deutsch</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+
+  .lang-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(221, 177, 18, 0.3);
+    border-radius: 50px;
+    padding: 0.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .lang-option:hover {
+  }
+
+  .lang-option.active {
+    background: linear-gradient(135deg, #ddb112 0%, #f0c040 100%);
+    color: #000;
+    font-weight: 600;
+  }
+
+  .lang-option.active .lang-code {
+    font-weight: 700;
+  }
+
+  .lang-code {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .lang-name {
+    display: none;
+    font-size: 0.75rem;
+  }
+
+  .lang-divider {
+    width: 1px;
+    height: 1.5rem;
+    background: rgba(221, 177, 18, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .lang-container {
+      padding: 0.4rem;
+      gap: 0.3rem;
+    }
+
+    .lang-option {
+      padding: 0.5rem 1rem;
+    }
+
+    .lang-code {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .lang-container {
+      gap: 0.2rem;
+    }
+
+    .lang-option {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .lang-code {
+      font-size: 0.9rem;
+    }
+
+    .lang-divider {
+      height: 1.2rem;
+    }
+  }
+</style>
+
+      </div>
+    </div>
+  </footer>
+
+<style>
+  .footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(221, 177, 18, 0.2);
+    background: rgba(6, 6, 71, 0.4);
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-copyright {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+  }
+
+  .footer-copyright:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-section {
+      flex: 1;
+    }
+
+    .footer-section:first-child {
+      text-align: left;
+    }
+
+    .footer-section:last-child {
+      text-align: right;
+    }
+  }
+</style>
+</html>
