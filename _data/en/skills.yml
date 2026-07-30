@@ -28,6 +28,10 @@
       tooltip:
         - name: "openCode"
           icon: "simple-icons:opencode"
+        - name: "LM Studio"
+          icon: "simple-icons:lmstudio"
+        - name: "Ollama"
+          icon: "cbi:ollama"
         - name: "PyTorch"
           icon: "simple-icons:pytorch"
         - name: "OpenCV"
