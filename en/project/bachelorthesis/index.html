@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Bachelor Thesis" content="">
+    <title>Bachelor Thesis</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <!-- Iconify Icon -->
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
+    <script src="/assets/js/iconify-icon.min.js"></script>
+
+    <!-- Plausible Analytics-->
+    <script defer data-domain="martintasch.de" src="https://plausible.taschcloud.de/js/script.hash.outbound-links.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+    
+  </head>
+  <body>
+    <section id="project-page">
+    <div class="projectpage-header">
+        
+        
+            <a href="/en/#projects" class="back-link anim-underline">
+                <iconify-icon icon="ion:return-up-back-outline"></iconify-icon> Back to Projects
+            </a>
+        
+              </div>
+    <div class="container">
+        <div class="project-header" style="background-image: url('/assets/images/projects/bachelorarbeit/bachelorarbeit_header_komp.jpg')">
+            <h1 class="title">Bachelor Thesis</h1>
+            <h2 class="subtitle">Using Stable Diffusion to generate datasets for image recognition of contamination in sanitary areas</h2>
+            <p class="date">22. July 2024</p>
+        </div>
+        <div class="project-content">
+            <p>In my bachelor thesis, I investigate the application of Stable Diffusion for generating datasets for image recognition, specifically in the sanitary sector. The methodology involves adapting Stable Diffusion for this specific application using Low Rank Adaptation (LoRA) and utilizes the Realistic Vision 5.1 model to create photorealistic images. The thesis demonstrates the feasibility of automated dataset creation with Stable Diffusion and achieves promising results with a validation accuracy of over 90% for the generated datasets, evaluated by a trained InceptionV3 image recognition model. Potential areas for improvement have been identified, including the need to improve the realistic representation of pollution through a larger and more realistic training dataset and to further adapt the model using LoRA. Future work should also consider creating a larger, more balanced evaluation dataset to achieve more meaningful results.</p>
+
+<p>The developed framework for automated data set generation is available on <a href="https://github.com/marttasch/StableDiffusion_generateDataset" target="_blank" rel="noopener noreferrer">Github</a>.
+The complete paper is available on the <a href="https://reposit.haw-hamburg.de/handle/20.500.12738/16340" target="_blank" rel="noopener noreferrer">HAW Hamburg repository</a>.</p>
+
+
+            <div class="project-gallery">
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script type="text/javascript" src="/assets/js/lightbox.js"></script>
+    <link rel="stylesheet" href="/assets/css/lightbox.css">  
+  </body>
+  <footer class="footer">
+    
+    <div class="footer-content">
+      <div class="footer-section">
+        <p class="footer-copyright">&copy; Martin Tasch, 2026</p>
+      </div>
+      <div class="footer-section">
+        <div class="language-switcher">
+  
+  
+  <div class="lang-container">
+    <a href="/en/project/bachelorthesis/"
+       class="lang-option active"
+       aria-label="Switch to English">
+      <span class="lang-code">EN</span>
+      <span class="lang-name">English</span>
+    </a>
+    <div class="lang-divider"></div>
+    <a href="/de/project/bachelorthesis/"
+       class="lang-option "
+       aria-label="Zu Deutsch wechseln">
+      <span class="lang-code">DE</span>
+      <span class="lang-name">Deutsch</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .language-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+  }
+
+  .lang-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(221, 177, 18, 0.3);
+    border-radius: 50px;
+    padding: 0.5rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+
+
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .lang-option:hover {
+  }
+
+  .lang-option.active {
+    background: linear-gradient(135deg, #ddb112 0%, #f0c040 100%);
+    color: #000;
+    font-weight: 600;
+  }
+
+  .lang-option.active .lang-code {
+    font-weight: 700;
+  }
+
+  .lang-code {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .lang-name {
+    display: none;
+    font-size: 0.75rem;
+  }
+
+  .lang-divider {
+    width: 1px;
+    height: 1.5rem;
+    background: rgba(221, 177, 18, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .lang-container {
+      padding: 0.4rem;
+      gap: 0.3rem;
+    }
+
+    .lang-option {
+      padding: 0.5rem 1rem;
+    }
+
+    .lang-code {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .lang-container {
+      gap: 0.2rem;
+    }
+
+    .lang-option {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .lang-code {
+      font-size: 0.9rem;
+    }
+
+    .lang-divider {
+      height: 1.2rem;
+    }
+  }
+</style>
+
+      </div>
+    </div>
+  </footer>
+
+<style>
+  .footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(221, 177, 18, 0.2);
+    background: rgba(6, 6, 71, 0.4);
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-copyright {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+  }
+
+  .footer-copyright:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-section {
+      flex: 1;
+    }
+
+    .footer-section:first-child {
+      text-align: left;
+    }
+
+    .footer-section:last-child {
+      text-align: right;
+    }
+  }
+</style>
+</html>
