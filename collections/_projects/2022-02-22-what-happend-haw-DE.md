@@ -1,6 +1,6 @@
 ---
 date: 2022-02-22
-title: Was passierte, HAW?
+title: What happend, HAW?
 subtitle: Medienprojekt an der HAW Hamburg
 language: de
 lang: de
